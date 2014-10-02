@@ -26,8 +26,7 @@ class Home extends Public_Controller {
 
 	public function index()
 	{
-		$this->template
-		->build('index');
+		$this->template->build('index');
 	}
 
 
@@ -56,7 +55,7 @@ class Home extends Public_Controller {
 
     		$post = (object) $this->input->post(null);
 
-    		$data['post'] = array(
+    		$data = array(
     			'cedula' => $post->cedula,
     			'sexo' => $post->sexo,
     			'nombre' => $post->nombre,
@@ -68,22 +67,50 @@ class Home extends Public_Controller {
     			'numero_factura' => $post->numero_factura
     			);
 
+
+            $config['upload_path'] = './' . UPLOAD_PATH . '';
+            $config['allowed_types'] = 'gif|jpg|png|jpeg';
+            $config['max_size'] = 2050;
+            $config['max_width'] = 1000;
+            $config['max_height'] = 700;
+            $config['encrypt_name'] = true;
+
+            $this->load->library('upload', $config);
+
+                // imagen
+            $img = $_FILES['image']['name'];
+
+            if (!empty($img)) {
+                if ($this->upload->do_upload('image')) {
+                    $datos = array('upload_data' => $this->upload->data());
+                    $path = UPLOAD_PATH . $datos['upload_data']['file_name'];
+                    $img = array(
+                        'archivo' => $path
+                        );
+                    $data = array_merge($data, $img);
+                } else {
+                    echo 'paila 1';die;
+                    // $this->session->set_flashdata('error', $this->upload->display_errors());
+                    // redirect('admin/gallery/new_gallery');
+                }
+            }
+
             //Validate sendmail
-    		if( $this->registro_model->insert($data['post']))
-    		{
+                if( $this->registro_model->insert($data))
+                {
 				// $this->send_email_to_user($data['post'], $contact_us->email);
                 //$this->session->set_flashdata('success', 'Su mensaje a sido enviado');
                 //redirect(base_url().'/contact_us');
-    			$statusJson = '';
-    			$msgJson = 'Su mensaje ha sido enviado';
-    		}
-    		else
-    		{
+                 $statusJson = '';
+                 $msgJson = 'Su mensaje ha sido enviado';
+             }
+             else
+             {
                 //$this->session->set_flashdata('error', 'Error Mailing, Contact the Webmaster');
                 //redirect(base_url().'/contact_us');
-    			$statusJson = 'error';
-    			$msgJson = 'Error Mailing, Contact the Webmaster';
-    		}
+                 $statusJson = 'error';
+                 $msgJson = 'Error Mailing, Contact the Webmaster';
+             }
   //       } else {
 
   //           //$this->session->set_flashdata('error', validation_errors());
@@ -92,9 +119,9 @@ class Home extends Public_Controller {
 		// 	$msgJson = validation_errors();
   //       }
 		// echo json_encode(array('status' => $statusJson, 'msg' => $msgJson));
-    		echo 'status: '.$statusJson.' msg: '.$msgJson;
-    	}
-    }
+             echo 'status: '.$statusJson.' msg: '.$msgJson;
+         }
+     }
 
 
 	// /**
@@ -108,7 +135,7 @@ class Home extends Public_Controller {
 	// {
 	// 	$this->load->library('email');		
 	// 	$this->load->library('user_agent');
-    
+
 	// 	Events::trigger('email', array(
 	// 		'name' => $data['name'],
 	// 		'email' => $data['email'],
@@ -120,4 +147,4 @@ class Home extends Public_Controller {
 	// 		'to' => $admin_email,
 	// 	), 'array');
 	// }
-}
+ }

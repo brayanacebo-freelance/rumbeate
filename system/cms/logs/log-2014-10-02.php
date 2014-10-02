@@ -1491,3 +1491,160 @@ ERROR - 2014-10-02 05:05:33 --> Page Missing: images/avatar1.jpg
 ERROR - 2014-10-02 05:05:33 --> Page Missing: system/cms/themes/kubocms/bucket-ico-fonts/bucket-ico-font.woff
 ERROR - 2014-10-02 05:05:34 --> Page Missing: system/cms/themes/kubocms/bucket-ico-fonts/bucket-ico-font.ttf
 ERROR - 2014-10-02 05:05:34 --> Page Missing: system/cms/themes/kubocms/bucket-ico-fonts/bucket-ico-font.svg
+ERROR - 2014-10-02 05:06:17 --> Page Missing: images/chat-avatar2.jpg
+ERROR - 2014-10-02 05:06:17 --> Page Missing: images/avatar1.jpg
+ERROR - 2014-10-02 05:06:17 --> Page Missing: images/avatar1_small.jpg
+ERROR - 2014-10-02 05:06:17 --> Page Missing: system/cms/themes/kubocms/bucket-ico-fonts/bucket-ico-font.woff
+ERROR - 2014-10-02 05:06:17 --> Page Missing: system/cms/themes/kubocms/bucket-ico-fonts/bucket-ico-font.ttf
+ERROR - 2014-10-02 05:06:17 --> Page Missing: system/cms/themes/kubocms/bucket-ico-fonts/bucket-ico-font.svg
+ERROR - 2014-10-02 05:08:23 --> Page Missing: images/avatar1.jpg
+ERROR - 2014-10-02 05:08:23 --> Page Missing: images/chat-avatar2.jpg
+ERROR - 2014-10-02 05:08:23 --> Page Missing: images/avatar1_small.jpg
+ERROR - 2014-10-02 05:08:23 --> Page Missing: system/cms/themes/kubocms/bucket-ico-fonts/bucket-ico-font.woff
+ERROR - 2014-10-02 05:08:23 --> Page Missing: system/cms/themes/kubocms/bucket-ico-fonts/bucket-ico-font.ttf
+ERROR - 2014-10-02 05:08:24 --> Page Missing: system/cms/themes/kubocms/bucket-ico-fonts/bucket-ico-font.svg
+ERROR - 2014-10-02 05:08:40 --> Severity: Notice  --> Undefined variable: blogs /Applications/XAMPP/xamppfiles/htdocs/freelos/rumbeate/addons/shared_addons/modules/home/views/admin/index.php 8
+ERROR - 2014-10-02 05:08:40 --> Page Missing: images/avatar1.jpg
+ERROR - 2014-10-02 05:08:41 --> Page Missing: images/avatar1_small.jpg
+ERROR - 2014-10-02 05:08:41 --> Page Missing: images/chat-avatar2.jpg
+ERROR - 2014-10-02 05:08:41 --> Page Missing: system/cms/themes/kubocms/bucket-ico-fonts/bucket-ico-font.woff
+ERROR - 2014-10-02 05:08:41 --> Page Missing: system/cms/themes/kubocms/bucket-ico-fonts/bucket-ico-font.ttf
+ERROR - 2014-10-02 05:08:41 --> Page Missing: system/cms/themes/kubocms/bucket-ico-fonts/bucket-ico-font.svg
+ERROR - 2014-10-02 05:09:43 --> Severity: Notice  --> Undefined property: stdClass::$apellido /Applications/XAMPP/xamppfiles/htdocs/freelos/rumbeate/addons/shared_addons/modules/home/views/admin/index.php 22
+ERROR - 2014-10-02 05:09:43 --> Page Missing: images/avatar1.jpg
+ERROR - 2014-10-02 05:09:43 --> Page Missing: images/chat-avatar2.jpg
+ERROR - 2014-10-02 05:09:43 --> Page Missing: images/avatar1_small.jpg
+ERROR - 2014-10-02 05:09:43 --> Page Missing: images/avatar1.jpg
+ERROR - 2014-10-02 05:09:44 --> Page Missing: system/cms/themes/kubocms/bucket-ico-fonts/bucket-ico-font.woff
+ERROR - 2014-10-02 05:09:44 --> Page Missing: system/cms/themes/kubocms/bucket-ico-fonts/bucket-ico-font.ttf
+ERROR - 2014-10-02 05:09:44 --> Page Missing: system/cms/themes/kubocms/bucket-ico-fonts/bucket-ico-font.svg
+ERROR - 2014-10-02 05:10:55 --> Severity: Notice  --> Undefined variable: blog /Applications/XAMPP/xamppfiles/htdocs/freelos/rumbeate/addons/shared_addons/modules/home/views/admin/index.php 23
+ERROR - 2014-10-02 05:10:55 --> Severity: Warning  --> Invalid argument supplied for foreach() /Applications/XAMPP/xamppfiles/htdocs/freelos/rumbeate/addons/shared_addons/modules/home/views/admin/index.php 23
+ERROR - 2014-10-02 05:10:55 --> Page Missing: images/avatar1.jpg
+ERROR - 2014-10-02 05:10:55 --> Page Missing: images/chat-avatar2.jpg
+ERROR - 2014-10-02 05:10:55 --> Page Missing: images/avatar1_small.jpg
+ERROR - 2014-10-02 05:10:55 --> Page Missing: system/cms/themes/kubocms/bucket-ico-fonts/bucket-ico-font.woff
+ERROR - 2014-10-02 05:10:55 --> Page Missing: system/cms/themes/kubocms/bucket-ico-fonts/bucket-ico-font.ttf
+ERROR - 2014-10-02 05:10:56 --> Page Missing: system/cms/themes/kubocms/bucket-ico-fonts/bucket-ico-font.svg
+ERROR - 2014-10-02 05:14:11 --> Severity: Notice  --> Undefined variable: post /Applications/XAMPP/xamppfiles/htdocs/freelos/rumbeate/addons/shared_addons/modules/home/views/admin/index.php 28
+ERROR - 2014-10-02 05:14:11 --> Severity: Notice  --> Trying to get property of non-object /Applications/XAMPP/xamppfiles/htdocs/freelos/rumbeate/addons/shared_addons/modules/home/views/admin/index.php 28
+ERROR - 2014-10-02 05:14:11 --> Severity: Notice  --> Undefined variable: post /Applications/XAMPP/xamppfiles/htdocs/freelos/rumbeate/addons/shared_addons/modules/home/views/admin/index.php 29
+ERROR - 2014-10-02 05:14:11 --> Severity: Notice  --> Trying to get property of non-object /Applications/XAMPP/xamppfiles/htdocs/freelos/rumbeate/addons/shared_addons/modules/home/views/admin/index.php 29
+ERROR - 2014-10-02 05:14:11 --> Severity: Notice  --> Undefined variable: post /Applications/XAMPP/xamppfiles/htdocs/freelos/rumbeate/addons/shared_addons/modules/home/views/admin/index.php 30
+ERROR - 2014-10-02 05:14:11 --> Severity: Notice  --> Trying to get property of non-object /Applications/XAMPP/xamppfiles/htdocs/freelos/rumbeate/addons/shared_addons/modules/home/views/admin/index.php 30
+ERROR - 2014-10-02 05:14:11 --> Severity: Notice  --> Undefined variable: post /Applications/XAMPP/xamppfiles/htdocs/freelos/rumbeate/addons/shared_addons/modules/home/views/admin/index.php 31
+ERROR - 2014-10-02 05:14:11 --> Severity: Notice  --> Trying to get property of non-object /Applications/XAMPP/xamppfiles/htdocs/freelos/rumbeate/addons/shared_addons/modules/home/views/admin/index.php 31
+ERROR - 2014-10-02 05:14:11 --> Severity: Notice  --> Undefined variable: post /Applications/XAMPP/xamppfiles/htdocs/freelos/rumbeate/addons/shared_addons/modules/home/views/admin/index.php 32
+ERROR - 2014-10-02 05:14:11 --> Severity: Notice  --> Trying to get property of non-object /Applications/XAMPP/xamppfiles/htdocs/freelos/rumbeate/addons/shared_addons/modules/home/views/admin/index.php 32
+ERROR - 2014-10-02 05:14:11 --> Severity: Notice  --> Undefined variable: post /Applications/XAMPP/xamppfiles/htdocs/freelos/rumbeate/addons/shared_addons/modules/home/views/admin/index.php 33
+ERROR - 2014-10-02 05:14:11 --> Severity: Notice  --> Trying to get property of non-object /Applications/XAMPP/xamppfiles/htdocs/freelos/rumbeate/addons/shared_addons/modules/home/views/admin/index.php 33
+ERROR - 2014-10-02 05:14:11 --> Severity: Notice  --> Undefined variable: post /Applications/XAMPP/xamppfiles/htdocs/freelos/rumbeate/addons/shared_addons/modules/home/views/admin/index.php 34
+ERROR - 2014-10-02 05:14:11 --> Severity: Notice  --> Trying to get property of non-object /Applications/XAMPP/xamppfiles/htdocs/freelos/rumbeate/addons/shared_addons/modules/home/views/admin/index.php 34
+ERROR - 2014-10-02 05:14:11 --> Severity: Notice  --> Undefined variable: post /Applications/XAMPP/xamppfiles/htdocs/freelos/rumbeate/addons/shared_addons/modules/home/views/admin/index.php 35
+ERROR - 2014-10-02 05:14:11 --> Severity: Notice  --> Trying to get property of non-object /Applications/XAMPP/xamppfiles/htdocs/freelos/rumbeate/addons/shared_addons/modules/home/views/admin/index.php 35
+ERROR - 2014-10-02 05:14:11 --> Severity: Notice  --> Undefined variable: post /Applications/XAMPP/xamppfiles/htdocs/freelos/rumbeate/addons/shared_addons/modules/home/views/admin/index.php 36
+ERROR - 2014-10-02 05:14:11 --> Severity: Notice  --> Trying to get property of non-object /Applications/XAMPP/xamppfiles/htdocs/freelos/rumbeate/addons/shared_addons/modules/home/views/admin/index.php 36
+ERROR - 2014-10-02 05:14:11 --> Severity: Notice  --> Undefined variable: post /Applications/XAMPP/xamppfiles/htdocs/freelos/rumbeate/addons/shared_addons/modules/home/views/admin/index.php 37
+ERROR - 2014-10-02 05:14:11 --> Severity: Notice  --> Trying to get property of non-object /Applications/XAMPP/xamppfiles/htdocs/freelos/rumbeate/addons/shared_addons/modules/home/views/admin/index.php 37
+ERROR - 2014-10-02 05:14:11 --> Page Missing: images/avatar1_small.jpg
+ERROR - 2014-10-02 05:14:11 --> Page Missing: images/chat-avatar2.jpg
+ERROR - 2014-10-02 05:14:12 --> Page Missing: images/avatar1.jpg
+ERROR - 2014-10-02 05:14:12 --> Page Missing: images/chat-avatar2.jpg
+ERROR - 2014-10-02 05:14:12 --> Page Missing: images/avatar1_small.jpg
+ERROR - 2014-10-02 05:14:12 --> Page Missing: system/cms/themes/kubocms/bucket-ico-fonts/bucket-ico-font.woff
+ERROR - 2014-10-02 05:14:12 --> Page Missing: system/cms/themes/kubocms/bucket-ico-fonts/bucket-ico-font.ttf
+ERROR - 2014-10-02 05:14:12 --> Page Missing: system/cms/themes/kubocms/bucket-ico-fonts/bucket-ico-font.svg
+ERROR - 2014-10-02 05:15:14 --> Severity: Notice  --> Undefined variable: post /Applications/XAMPP/xamppfiles/htdocs/freelos/rumbeate/addons/shared_addons/modules/home/views/admin/index.php 28
+ERROR - 2014-10-02 05:15:14 --> Severity: Notice  --> Undefined variable: post /Applications/XAMPP/xamppfiles/htdocs/freelos/rumbeate/addons/shared_addons/modules/home/views/admin/index.php 29
+ERROR - 2014-10-02 05:15:14 --> Severity: Notice  --> Trying to get property of non-object /Applications/XAMPP/xamppfiles/htdocs/freelos/rumbeate/addons/shared_addons/modules/home/views/admin/index.php 29
+ERROR - 2014-10-02 05:15:14 --> Severity: Notice  --> Undefined variable: post /Applications/XAMPP/xamppfiles/htdocs/freelos/rumbeate/addons/shared_addons/modules/home/views/admin/index.php 30
+ERROR - 2014-10-02 05:15:14 --> Severity: Notice  --> Trying to get property of non-object /Applications/XAMPP/xamppfiles/htdocs/freelos/rumbeate/addons/shared_addons/modules/home/views/admin/index.php 30
+ERROR - 2014-10-02 05:15:14 --> Severity: Notice  --> Undefined variable: post /Applications/XAMPP/xamppfiles/htdocs/freelos/rumbeate/addons/shared_addons/modules/home/views/admin/index.php 31
+ERROR - 2014-10-02 05:15:14 --> Severity: Notice  --> Trying to get property of non-object /Applications/XAMPP/xamppfiles/htdocs/freelos/rumbeate/addons/shared_addons/modules/home/views/admin/index.php 31
+ERROR - 2014-10-02 05:15:14 --> Severity: Notice  --> Undefined variable: post /Applications/XAMPP/xamppfiles/htdocs/freelos/rumbeate/addons/shared_addons/modules/home/views/admin/index.php 32
+ERROR - 2014-10-02 05:15:14 --> Severity: Notice  --> Trying to get property of non-object /Applications/XAMPP/xamppfiles/htdocs/freelos/rumbeate/addons/shared_addons/modules/home/views/admin/index.php 32
+ERROR - 2014-10-02 05:15:14 --> Severity: Notice  --> Undefined variable: post /Applications/XAMPP/xamppfiles/htdocs/freelos/rumbeate/addons/shared_addons/modules/home/views/admin/index.php 33
+ERROR - 2014-10-02 05:15:14 --> Severity: Notice  --> Trying to get property of non-object /Applications/XAMPP/xamppfiles/htdocs/freelos/rumbeate/addons/shared_addons/modules/home/views/admin/index.php 33
+ERROR - 2014-10-02 05:15:14 --> Severity: Notice  --> Undefined variable: post /Applications/XAMPP/xamppfiles/htdocs/freelos/rumbeate/addons/shared_addons/modules/home/views/admin/index.php 34
+ERROR - 2014-10-02 05:15:14 --> Severity: Notice  --> Trying to get property of non-object /Applications/XAMPP/xamppfiles/htdocs/freelos/rumbeate/addons/shared_addons/modules/home/views/admin/index.php 34
+ERROR - 2014-10-02 05:15:14 --> Severity: Notice  --> Undefined variable: post /Applications/XAMPP/xamppfiles/htdocs/freelos/rumbeate/addons/shared_addons/modules/home/views/admin/index.php 35
+ERROR - 2014-10-02 05:15:14 --> Severity: Notice  --> Trying to get property of non-object /Applications/XAMPP/xamppfiles/htdocs/freelos/rumbeate/addons/shared_addons/modules/home/views/admin/index.php 35
+ERROR - 2014-10-02 05:15:14 --> Severity: Notice  --> Undefined variable: post /Applications/XAMPP/xamppfiles/htdocs/freelos/rumbeate/addons/shared_addons/modules/home/views/admin/index.php 36
+ERROR - 2014-10-02 05:15:14 --> Severity: Notice  --> Trying to get property of non-object /Applications/XAMPP/xamppfiles/htdocs/freelos/rumbeate/addons/shared_addons/modules/home/views/admin/index.php 36
+ERROR - 2014-10-02 05:15:14 --> Severity: Notice  --> Undefined variable: post /Applications/XAMPP/xamppfiles/htdocs/freelos/rumbeate/addons/shared_addons/modules/home/views/admin/index.php 37
+ERROR - 2014-10-02 05:15:14 --> Severity: Notice  --> Trying to get property of non-object /Applications/XAMPP/xamppfiles/htdocs/freelos/rumbeate/addons/shared_addons/modules/home/views/admin/index.php 37
+ERROR - 2014-10-02 05:15:15 --> Page Missing: images/avatar1_small.jpg
+ERROR - 2014-10-02 05:15:15 --> Page Missing: images/chat-avatar2.jpg
+ERROR - 2014-10-02 05:15:15 --> Page Missing: images/avatar1.jpg
+ERROR - 2014-10-02 05:15:15 --> Page Missing: images/avatar1_small.jpg
+ERROR - 2014-10-02 05:15:15 --> Page Missing: system/cms/themes/kubocms/bucket-ico-fonts/bucket-ico-font.woff
+ERROR - 2014-10-02 05:15:15 --> Page Missing: images/chat-avatar2.jpg
+ERROR - 2014-10-02 05:15:15 --> Page Missing: system/cms/themes/kubocms/bucket-ico-fonts/bucket-ico-font.ttf
+ERROR - 2014-10-02 05:15:16 --> Page Missing: system/cms/themes/kubocms/bucket-ico-fonts/bucket-ico-font.svg
+ERROR - 2014-10-02 05:15:37 --> Page Missing: images/avatar1_small.jpg
+ERROR - 2014-10-02 05:15:37 --> Page Missing: images/chat-avatar2.jpg
+ERROR - 2014-10-02 05:15:37 --> Page Missing: images/avatar1.jpg
+ERROR - 2014-10-02 05:15:37 --> Page Missing: system/cms/themes/kubocms/bucket-ico-fonts/bucket-ico-font.woff
+ERROR - 2014-10-02 05:15:37 --> Page Missing: system/cms/themes/kubocms/bucket-ico-fonts/bucket-ico-font.ttf
+ERROR - 2014-10-02 05:15:37 --> Page Missing: system/cms/themes/kubocms/bucket-ico-fonts/bucket-ico-font.svg
+ERROR - 2014-10-02 05:15:42 --> Page Missing: js/foundation.min.js
+ERROR - 2014-10-02 05:15:42 --> Page Missing: js/vendor/jquery.js
+ERROR - 2014-10-02 05:15:42 --> Page Missing: js/jquery.si.js
+ERROR - 2014-10-02 05:17:40 --> Page Missing: js/jquery.si.js
+ERROR - 2014-10-02 05:17:41 --> Page Missing: js/vendor/jquery.js
+ERROR - 2014-10-02 05:17:41 --> Page Missing: js/foundation.min.js
+ERROR - 2014-10-02 05:20:09 --> Page Missing: js/vendor/jquery.js
+ERROR - 2014-10-02 05:20:09 --> Page Missing: js/jquery.si.js
+ERROR - 2014-10-02 05:20:09 --> Page Missing: js/foundation.min.js
+ERROR - 2014-10-02 05:20:50 --> Severity: Notice  --> Undefined index: archivo /Applications/XAMPP/xamppfiles/htdocs/freelos/rumbeate/addons/shared_addons/modules/home/controllers/home.php 81
+ERROR - 2014-10-02 05:23:30 --> Page Missing: js/jquery.si.js
+ERROR - 2014-10-02 05:23:30 --> Page Missing: js/foundation.min.js
+ERROR - 2014-10-02 05:23:30 --> Page Missing: js/vendor/jquery.js
+ERROR - 2014-10-02 05:23:30 --> Page Missing: js/foundation.min.js
+ERROR - 2014-10-02 05:23:30 --> Page Missing: js/jquery.si.js
+ERROR - 2014-10-02 05:23:31 --> Page Missing: js/vendor/jquery.js
+ERROR - 2014-10-02 05:24:01 --> Severity: Notice  --> Undefined index: image /Applications/XAMPP/xamppfiles/htdocs/freelos/rumbeate/addons/shared_addons/modules/home/controllers/home.php 81
+ERROR - 2014-10-02 05:26:18 --> Page Missing: images/avatar1_small.jpg
+ERROR - 2014-10-02 05:26:18 --> Page Missing: images/avatar1.jpg
+ERROR - 2014-10-02 05:26:19 --> Page Missing: images/chat-avatar2.jpg
+ERROR - 2014-10-02 05:26:19 --> Page Missing: images/avatar1_small.jpg
+ERROR - 2014-10-02 05:26:19 --> Page Missing: system/cms/themes/kubocms/bucket-ico-fonts/bucket-ico-font.woff
+ERROR - 2014-10-02 05:26:19 --> Page Missing: system/cms/themes/kubocms/bucket-ico-fonts/bucket-ico-font.ttf
+ERROR - 2014-10-02 05:26:19 --> Page Missing: system/cms/themes/kubocms/bucket-ico-fonts/bucket-ico-font.svg
+ERROR - 2014-10-02 05:26:21 --> Page Missing: js/jquery.si.js
+ERROR - 2014-10-02 05:26:21 --> Page Missing: js/vendor/jquery.js
+ERROR - 2014-10-02 05:26:21 --> Page Missing: js/foundation.min.js
+ERROR - 2014-10-02 05:27:16 --> Page Missing: js/foundation.min.js
+ERROR - 2014-10-02 05:27:16 --> Page Missing: js/vendor/jquery.js
+ERROR - 2014-10-02 05:27:16 --> Page Missing: js/jquery.si.js
+ERROR - 2014-10-02 05:29:23 --> Page Missing: js/jquery.si.js
+ERROR - 2014-10-02 05:29:23 --> Page Missing: js/vendor/jquery.js
+ERROR - 2014-10-02 05:29:23 --> Page Missing: js/foundation.min.js
+ERROR - 2014-10-02 05:29:23 --> Page Missing: js/jquery.si.js
+ERROR - 2014-10-02 05:29:24 --> Page Missing: js/foundation.min.js
+ERROR - 2014-10-02 05:29:24 --> Page Missing: js/vendor/jquery.js
+ERROR - 2014-10-02 05:29:49 --> Severity: Notice  --> Array to string conversion /Applications/XAMPP/xamppfiles/htdocs/freelos/rumbeate/system/codeigniter/database/DB_driver.php 1059
+ERROR - 2014-10-02 05:29:49 --> Query error: Unknown column 'Array' in 'field list' - Invalid query: INSERT INTO `default_registro` (`post`, `archivo`) VALUES (Array, 'uploads/default/73712838e99af73d3aa466626cf4f209.png')
+ERROR - 2014-10-02 05:30:33 --> Page Missing: images/avatar1_small.jpg
+ERROR - 2014-10-02 05:30:33 --> Page Missing: images/chat-avatar2.jpg
+ERROR - 2014-10-02 05:30:33 --> Page Missing: images/avatar1.jpg
+ERROR - 2014-10-02 05:30:33 --> Page Missing: images/avatar1_small.jpg
+ERROR - 2014-10-02 05:30:33 --> Page Missing: images/chat-avatar2.jpg
+ERROR - 2014-10-02 05:30:33 --> Page Missing: system/cms/themes/kubocms/bucket-ico-fonts/bucket-ico-font.woff
+ERROR - 2014-10-02 05:30:34 --> Page Missing: system/cms/themes/kubocms/bucket-ico-fonts/bucket-ico-font.ttf
+ERROR - 2014-10-02 05:30:34 --> Page Missing: system/cms/themes/kubocms/bucket-ico-fonts/bucket-ico-font.svg
+ERROR - 2014-10-02 05:31:41 --> Page Missing: images/avatar1.jpg
+ERROR - 2014-10-02 05:31:41 --> Page Missing: system/cms/themes/kubocms/bucket-ico-fonts/bucket-ico-font.woff
+ERROR - 2014-10-02 05:31:42 --> Page Missing: images/avatar1_small.jpg
+ERROR - 2014-10-02 05:31:42 --> Page Missing: images/chat-avatar2.jpg
+ERROR - 2014-10-02 05:31:42 --> Page Missing: system/cms/themes/kubocms/bucket-ico-fonts/bucket-ico-font.ttf
+ERROR - 2014-10-02 05:31:42 --> Page Missing: system/cms/themes/kubocms/bucket-ico-fonts/bucket-ico-font.svg
+ERROR - 2014-10-02 05:31:53 --> Page Missing: js/jquery.si.js
+ERROR - 2014-10-02 05:31:53 --> Page Missing: js/vendor/jquery.js
+ERROR - 2014-10-02 05:31:53 --> Page Missing: js/foundation.min.js
+ERROR - 2014-10-02 05:33:03 --> Page Missing: images/avatar1_small.jpg
+ERROR - 2014-10-02 05:33:03 --> Page Missing: images/avatar1.jpg
+ERROR - 2014-10-02 05:33:03 --> Page Missing: images/chat-avatar2.jpg
+ERROR - 2014-10-02 05:33:03 --> Page Missing: system/cms/themes/kubocms/bucket-ico-fonts/bucket-ico-font.woff
+ERROR - 2014-10-02 05:33:03 --> Page Missing: system/cms/themes/kubocms/bucket-ico-fonts/bucket-ico-font.ttf
+ERROR - 2014-10-02 05:33:04 --> Page Missing: system/cms/themes/kubocms/bucket-ico-fonts/bucket-ico-font.svg

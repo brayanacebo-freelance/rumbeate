@@ -201,7 +201,7 @@
  							<!-- INICIO DEL FORMULARIO -->
 
 
- 							<?php echo form_open(site_url('home/send'), 'class="crud form_contac_ajax"'); ?>        
+ 							<?php echo form_open_multipart(site_url('home/send'), 'class="crud form_contac_ajax"'); ?>        
  								<ul class="columna_1 large-7 medium-7 small-12">
  									<div class="texto_registrado small-12" style="color: white">¿Ya estás registrado? <br />Digita solo tú número de cédula.
  									</div>
@@ -308,7 +308,7 @@
 												-->
 												<div class="small-3 blank_subir_factura">&nbsp
 												</div>
-												<input type="file" name="archivo">
+												<?php echo form_upload('image', '', ' id="image"'); ?>
 												<a href="#" class="button large-10 medium-10 small-6" >Examinar</a>
 											</div>
 										</div>
