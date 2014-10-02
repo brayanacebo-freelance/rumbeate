@@ -178,3 +178,11 @@ if (!function_exists('kubo_css')) {
 		return $scrip;
 	}
 }
+
+if (!function_exists('assets_url')) {
+	function assets_url($uri = '') {
+		$CI = & get_instance();
+		$src = $CI->config->site_url('addons/shared_addons/themes/rumbeate/' . $uri);
+		return $src;
+	}
+}

@@ -1,0 +1,31 @@
+div.si label.cabinet {
+	display: block;
+	overflow: hidden;
+	position: relative;
+	z-index: 3;
+	float: left;
+}
+div.si label.cabinet input {
+	position: relative;
+	left: -140px;
+	top: 0;
+	height: 100%;
+	width: auto !important;
+	z-index: 2;
+	opacity: 0;
+	-moz-opacity: 0;
+	filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+}
+div.si div.uploadButton {
+	position: relative;
+	float: left;
+}
+div.si div.uploadButton div {
+	background: url("../images/btn_examinar") no-repeat;
+	left: -156px;
+	position: absolute;
+	z-index: 1;
+}
+div.si label.selectedFile {
+	
+}

@@ -1,80 +1,122 @@
 <?php
 
+
+
 defined('BASEPATH') OR exit('No direct script access allowed');
 
+
+
 /**
- *
- * @author 	Luis Fernando Salazar Buitrago
- * @author  Brayan Acebo
- * @package 	PyroCMS
- * @subpackage 	Home Module
- * @category 	Modulos
- * @license 	Apache License v2.0
+
+ * @author Brayan Acebo
+
  */
 
 class Home extends Public_Controller {
 
-    public function __construct() {
+    public function __construct()
+    {
         parent::__construct();
+        $this->load->model('registro_model');
     }
-
+	
     // -----------------------------------------------------------------
+
+
 
     public function index()
     {
-    	// consultamos los datos del Banner
-        $banner = $this->db->get('home_banner')->result();
-
-        // consultamos los datos de Noticias Destacadas
-        $outstanding_news = $this->db->where('type', '1')->get('home_outstanding')->result();
-
-		// consultamos los datos de Servicios Destacadas
-        $outstanding_services = $this->db->where('type', '2')->get('home_outstanding')->result();
-		
-		// Consultamos los datos de productos destacados del modulo de productos
-		$products = $this->db
-			->where('outstanding', '1')
-			->get('products')
-			->result();
-		
-		// recorremos los datos para cambiar algunas de sus caracteristicas
-        foreach($products AS $item)
-		{
-			// el de las imagenes solo es si se necesita cargar las imagenes internas para un slider
-			/*$item->images = $this->product_image_model->get_many_by('product_id',$item->id);*/
-			$item->link = site_url('products/detail/'.$item->slug);
-		}
-		
-		// Consultamos los datos de noticias destacados del modulo de noticias
-		$news = $this->db
-			->where('outstanding', '1')
-			->get('news')
-			->result();
-		
-		// recorremos los datos para cambiar algunas de sus caracteristicas
-		foreach($news AS $item)
-		{
-			// el de las imagenes solo es si se necesita cargar las imagenes internas para un slider
-			/*$item->images = $this->product_image_model->get_many_by('product_id',$item->id);*/ 
-			$item->link = site_url('news/detail/'.$item->slug);
-		}
-		
-		// Consultamos los datos del slider de Clientes
-        $customers = $this->db->get('home_customers')->result();
-		
-		//Consultamos los datos del texto informativo
-		$text_info = $this->db->limit(1)->get('home_text_info')->result();
-		
-		// agregamos los atributos al template
         $this->template
-                ->set('banner', $banner)
-                ->set('outstanding_news', $outstanding_news)
-                ->set('outstanding_services', $outstanding_services)
-				->set('products', $products)
-				->set('news', $news)
-				->set('customers', $customers)
-        		->set('text_info', $text_info[0])
                 ->build('index');
     }
 
+
+    /*
+     *Enviar correo
+     */
+
+ //    function send()
+ //    {
+ //        $this->form_validation->set_rules('name', 'Nombre y Apellido', 'required|trim|max_length[100]');
+ //        $this->form_validation->set_rules('email', 'Correo', 'required|trim|valid_email|max_length[100]');
+ //        $this->form_validation->set_rules('phone', 'Teléfono', 'trim|max_length[30]');
+ //        $this->form_validation->set_rules('cell', 'Celular', 'trim|max_length[30]');
+ //        $this->form_validation->set_rules('company', 'Empresa/Organización', 'trim|max_length[100]');
+ //        $this->form_validation->set_rules('message', 'Mensaje', 'required|trim|max_length[455]');
+		
+	// 	$statusJson = 'error';
+	// 	$msgJson = 'Por favor intenta de mas tarde';
+		
+ //        if ($this->form_validation->run() === TRUE)
+ //        {
+	// 		$_contact_us = $this->contact_us_m->get_all();
+
+	//         $contact_us = array();
+	
+	//         if (count($_contact_us) > 0) {
+	
+	//             $contact_us = $_contact_us[0];
+	
+	//         }
+	//        	$post = (object) $this->input->post(null);
+
+ //            $data['post'] = array(
+ //                'name' => $post->name,
+ //                'email' => $post->email,
+ //                'phone' => $post->phone,
+ //                'cell' => $post->cell,
+ //                'company' => $post->company,
+ //                'message' => $post->message,
+ //            );
+
+ //            //Validate sendmail
+ //            if( $this->contact_us_emails_m->insert($data['post']))
+ //            {
+	// 			$this->send_email_to_user($data['post'], $contact_us->email);
+ //                //$this->session->set_flashdata('success', 'Su mensaje a sido enviado');
+ //                //redirect(base_url().'/contact_us');
+	// 			$statusJson = '';
+	// 			$msgJson = 'Su mensaje ha sido enviado';
+ //            }
+ //            else
+ //            {
+ //                //$this->session->set_flashdata('error', 'Error Mailing, Contact the Webmaster');
+ //                //redirect(base_url().'/contact_us');
+ //                $statusJson = 'error';
+	// 			$msgJson = 'Error Mailing, Contact the Webmaster';
+ //            }
+ //        } else {
+
+ //            //$this->session->set_flashdata('error', validation_errors());
+ //            //redirect(base_url().'/contact_us');
+	// 		$statusJson = 'error';
+	// 		$msgJson = validation_errors();
+ //        }
+	// 	echo json_encode(array('status' => $statusJson, 'msg' => $msgJson));
+ //    }
+
+
+	// /**
+	//  * Send an email
+	//  *
+	//  * @param array $comment The comment data.
+	//  * @param array $entry The entry data.
+	//  * @return boolean 
+	//  */
+	// private function send_email_to_user($data, $admin_email)
+	// {
+	// 	$this->load->library('email');		
+	// 	$this->load->library('user_agent');
+		
+	// 	Events::trigger('email', array(
+	// 		'name' => $data['name'],
+	// 		'email' => $data['email'],
+	// 		'phone' => $data['phone'],
+	// 		'company' => $data['company'],
+	// 		'message' => $data['message'],
+	// 		'slug' => 'contact',
+	// 		/*'email' => Settings::get('contact_email'), // se manda el correo a al de la configuración del pyro*/
+	// 		'to' => $admin_email,
+	// 	), 'array');
+	// }
 }

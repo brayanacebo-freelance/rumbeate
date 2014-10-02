@@ -1,0 +1,1938 @@
+
+
+/*-------------******************************MEDIA QUERY 1024PX**********************-------------------*/
+/*-------------**************************************************************************-------------------*/
+
+@media screen and (min-width: 1024px) {
+    body {
+        background: url("../img/header_desktop_3.jpg") no-repeat;
+        background-position: center top;
+    }
+
+    body {
+        background-color:#000; 
+    }
+    .texto_check a, .texto_check_2 a {
+        color:#FFFFFF;
+    }    
+
+    /*------------- Header-------------------*/
+
+    header, {
+        width: 100%;
+        display: block;
+        float: left;
+        position: relative;
+    }
+
+    .logo_cancun_2, .logo_cancun_texto_2 {
+        display:none;
+    }
+
+    .logo_cancun {
+        float: left;
+        margin-top:0;
+        margin-bottom: 1%;
+        margin-left: 4%;
+        -webkit-animation-name: bounceIn;
+        animation-name: bounceIn;
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+    }
+
+
+     @-webkit-keyframes bounceIn {
+  0%, 60%, 75%, 90%, 100% {
+    -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+            transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -50%, 0);
+            transform: translate3d(0, -50%, 0);
+  }
+
+  70% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 5%, 0);
+            transform: translate3d(0, 5%, 0);
+  }
+
+  85% {
+    -webkit-transform: translate3d(0, -5%, 0);
+            transform: translate3d(0, -5%, 0);
+  }
+
+  92% {
+    -webkit-transform: translate3d(0, 5%, 0);
+            transform: translate3d(0, 5%, 0);
+  }
+
+  100% {
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+@keyframes bounceIn {
+  0%, 60%, 75%, 90%, 100% {
+    -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+            transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -50%, 0);
+            transform: translate3d(0, -50%, 0);
+  }
+
+  70% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 5%, 0);
+            transform: translate3d(0, 5%, 0);
+  }
+
+  85% {
+    -webkit-transform: translate3d(0, -5%, 0);
+            transform: translate3d(0, -5%, 0);
+  }
+
+  92% {
+    -webkit-transform: translate3d(0, 5%, 0);
+            transform: translate3d(0, 5%, 0);
+  }
+
+  100% {
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+
+    .logo_cancun_texto {
+        width:454px;
+        height: 190px;
+        float:left;
+    }
+     .blank_logo, .contendedor_logo, .cancun_header_2, .cancun_texto_header_2, .blank_logo_header_2 {
+        float:left;
+        display:block;
+    }
+
+    .cancun_header_2 {
+        margin-left: 3%;
+    }
+
+    .cancun_texto_header_2 {
+        margin-left: -3%;
+    }
+    .contendedor_logo_2 {
+        margin-top: 2%;
+    }
+
+    /*------------- Primer contendor cambiable-------------------*/
+    .general_premios {
+        float: left;
+        position: relative;
+        display:block;
+        overflow: hidden;
+    }
+
+    .premios {
+        height: 100%;
+        position: relative;
+        display: block;
+        float: left;
+        width: 100%;
+    }
+
+    .descripcion_premios {
+        height: 100%;
+        position: relative;
+        display: block;
+        float: left;
+        padding-bottom: 2%;
+        padding-top: 2%;
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    .premio_1, .premio_2, .premio_3, .texto_mecanica {
+        float: left;
+        display: block;
+        width:100%;
+        position:relative;
+    }
+     .blank_premios {
+        display:none;
+     }
+
+    .texto_mecanica {
+        background: url("../img/fondo_mecanica_texto.png") no-repeat;
+        background-size: 100%;
+        float:left;
+        display: block;
+        margin-top:2%;
+        margin-right: 2%;
+    }
+        
+     .texto_mecanica p {
+        font-family: 'Lato', sans-serif;
+        font-size: 1.1rem;
+        line-height: 1;
+        width: 100%;
+        height:auto;
+        color:#FFFFFF;
+        font-weight: 300;
+        text-align: center;
+        margin-top:4%;
+        padding-right: 5%;
+    }
+       
+    .mecanica_1, .mecanica_2, .mecanica_3, .blank_mecanica {
+        float: left;
+        display: block;
+        width:100%;
+        text-align: center;
+        line-height:1;
+        margin-left: 0%;
+    }
+
+    .mecanica_1 {
+        background: url("../img/graphic_mecanica.png") no-repeat;
+        background-size: 100%;
+    }
+
+    .mecanica_2 {
+        background: url("../img/graphic_mecanica_2.png") no-repeat;
+        background-size: 100%;    
+    }
+
+    .mecanica_3 {
+        background: url("../img/graphic_mecanica_3.png") no-repeat;
+        background-size: 100%;
+    }
+
+    .mecanica_1 p, .mecanica_2 p, .mecanica_3 p {
+        font-family: 'Lato', sans-serif;
+        font-size: 0.8rem;
+        width: 100%;
+        height:auto;
+        margin:0px auto;
+        padding:0px;
+        color:#FFFFFF;
+        margin-top: 30%;
+        margin-right: 5%;
+        font-weight: 300;          
+    }
+
+    .compra, .texto_compra {
+        display: block;
+        float: left;
+        position: relative;
+    }
+
+    .compra {
+        margin-top: 1%;
+    }
+    .texto_compra {
+        margin-top:7%;
+        margin-left: 8%;
+    }
+
+    .texto_compra p {
+        display: block;
+        float: left;
+        position: relative;
+        background: url("../img/fondo_comprar.png") no-repeat;
+        background-size: 100%;
+        font-family: 'Lato', sans-serif;
+        font-size: 0.8rem;
+        color:#FFFFFF;
+        font-weight: 300;
+        width:100%;
+        text-align: center;
+        }
+
+    .logos_compra {
+        display: block;
+        float: left;
+        position: relative;
+    }
+    .texto_terminos {
+        font-family: 'Lato', sans-serif;
+        font-size: 0.8rem;
+        line-height: 1;
+        width: 100%;
+        height:auto;
+        color:#FFFFFF;
+        font-weight: 300;
+        text-align: center;
+        margin-left:5%;
+        display: block;
+        float: left;
+        position: relative;
+    }
+
+    .texto_terminos a {
+        color:#FC007E;
+        text-decoration: none;
+    }
+
+    .participa {
+       margin-top:2%;
+    }
+    .participa, .btn_participa, .flecha_participa, .coco_loco, .plugin_redes, .ya_participaste {
+        position: relative;
+        display: block;
+        float: left;
+        position: relative;
+    }
+
+    .coco_loco {
+        z-index: 20;
+        margin-bottom: 10%;
+    }
+    .flecha_participa {
+        margin-left: -16%;
+    z-index: 10;
+    margin-top: 9%;
+    }
+    
+    .plugin_redes {
+        margin-left:2%;
+    }
+
+    .twitter_megusta {
+        margin-top: 15%;
+    }
+     
+    .ya_participaste {
+        margin-left: 0px;
+    }
+
+    .ya_participaste img {
+        float: right;
+        margin-top: 40%
+    }
+
+
+    /*------------- Segundo contendor cambiable (FORMULARIO)-------------------*/
+    .formulario_contendedor {
+        display:none;
+        float:left;
+        position: relative;
+         overflow: hidden;
+    }
+    .factura_center {
+        margin:0px auto;
+        padding:0px;
+    }
+    .descripcion_factura {
+        height: 100%;
+        position: relative;
+        display: block;
+        float: left;
+        padding-bottom: 5%;
+        padding-top: 2%;
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    .info_factura, .info_factura_2, .info_factura_3, .blank_mecanica, .blank_mecanica_2 {
+        float: left;
+        display: block;
+        width:100%;
+        text-align: center;
+        line-height:1;
+        margin-left: 0%;
+    }
+
+    .info_factura {
+        background: url("../img/graphic_ayuda_form.png") no-repeat;
+        background-size: 100%;
+    }
+
+    .info_factura_2 {
+        background: url("../img/graphic_ayuda_form_2.png") no-repeat;
+        background-size: 100%;    
+    }
+
+    .info_factura_3 {
+        background: url("../img/graphic_ayuda_form_3.png") no-repeat;
+        background-size: 100%;
+    }
+
+    .info_factura p, .info_factura_2 p, .info_factura_3 p {
+        font-family: 'Lato', sans-serif;
+        font-size: 0.8rem;
+        width: 100%;
+        height:auto;
+        margin:0px auto;
+        padding:0px;
+        color:#FFFFFF;
+        margin-top: 37%;
+        margin-right: 5%;
+        font-weight: 300;          
+    }
+
+    .header_fomulario {
+        margin-top: 2%;
+         -webkit-animation-name: bounceIn;
+        animation-name: bounceIn;
+        -webkit-animation-duration: 1.5s;
+        animation-duration: 1.5s;
+    }
+
+     @-webkit-keyframes bounceIn {
+  
+    0% {
+    opacity: 0;
+    }
+
+    60% {
+    opacity: 1;
+    }
+
+    100% {
+    opacity: 1;
+    }
+  
+}
+
+@keyframes bounceIn {
+  
+  0% {
+    opacity: 0;
+    }
+
+    60% {
+    opacity: 1;
+    }
+
+    100% {
+    opacity: 1;
+    }
+}
+
+    .formulario {
+        background-color: rgba(0, 0, 0, 0.7);
+    }   
+
+
+    .header_fomulario, .blank_campo, .texto_explicativo, .formulario, .columna_1, .columna_2, .columna_3, .texto_campo_sexo, .texto_campo_examinar, .texto_campo, .campo, .input {
+        display: block;
+        float:left;
+        position: relative;
+    }
+    .columna_1, .columna_2 {
+        margin-left:1.1rem;     
+    }
+
+    .blank_campo_formulario, .blank_subir_factura {
+        display: none;
+    }
+
+    .campo {
+        height:100%;
+    }
+
+    .texto_campo, .texto_campo_sexo {
+        color: #fff;
+        font-family: 'Lato', sans-serif;
+        font-size: 1rem;
+        line-height: 1;
+        font-weight: 300;
+        width: 100%;
+        text-align: right;
+        padding-right: 5%;
+        margin-top:3%;
+        margin-bottom: 6%;
+    }
+
+    .texto_campo_examinar{
+        color: #fff;
+        font-family: 'Lato', sans-serif;
+        font-size: 1rem;
+        line-height: 1;
+        font-weight: 300;
+        width: 100%;
+        text-align: right;
+        padding-right: 14%;
+        margin-top:3%;
+        margin-bottom: 6%;
+    }
+
+    input {
+        height: 20px;
+    }
+    label {
+        color: #fff;
+        font-family: 'Lato', sans-serif;
+        font-size: 1rem;
+        line-height: 1;
+        font-weight: 300;
+        display: inline-block;
+        margin-left: 0.44444rem;
+        margin-right: 0.88889rem;
+        margin-bottom: 0;
+        vertical-align: baseline;
+    }
+    .texto_check, .texto_check_2 {
+         line-height: 1;
+         font-size: 0.9rem;
+         margin-left:2%;
+         text-align: right;
+
+    }
+    #checkbox1 {
+        margin-top:2%;
+    }
+
+    .texto_subir_factura {
+        color: #fff;
+        font-family: 'Lato', sans-serif;
+        font-size: 1.2rem;
+        line-height: 1;
+        font-weight: 300;
+        text-align: center;
+        margin:0px auto;
+    }
+    .contenedor_subir_factura {
+        margin:0px auto;
+        padding: 0px;
+
+    }
+    .contenedor_subir_factura_2 {
+        margin:0px auto;
+        padding: 0px;
+        margin-top:3%;
+
+    }
+    .linea_separador {
+        background: url("../img/linea.png") no-repeat;
+        background-size: 100%;
+        }
+    .texto_campo_tienda, input file {
+        color: #fff;
+        font-family: 'Lato', sans-serif;
+        font-size: 1rem;
+        line-height: 1;
+        font-weight: 300;
+        width: 100%;
+        text-align: center;
+        margin-top:0%;
+        margin-bottom: 6%;
+    }
+    .input_tienda {
+        margin:0px auto;
+        padding:0px;
+    }
+    .terminos {
+        margin-top: 0;
+    }
+
+    .terminos_2 {
+        display:none;
+    }
+    .label_1 {
+        color:#FF12EE;
+    }
+        /*------------- Tercer contendor cambiable (GRACIAS)-------------------*/
+    
+    
+    .contendedor_gracias {
+        display: none;
+        overflow: hidden;
+    }
+    .contenedor_logo {
+        float: left;
+        margin-top: 5%;
+    }
+    .logo_cancun_gracias {
+        margin:0px auto;
+        padding:0px;
+    }    
+    .gracias {
+        float: left;
+        position:relative;
+        display:block;
+        background: url("../img/texto_gracias.png") no-repeat;
+        background-size: 100%;
+        width: 100%;
+    }
+    .twitter {
+        float: left;
+        position:relative;
+        display:block;
+        margin-top:5%;
+        margin-left: -8%;
+    }
+    .blank_tienda_durex, .tienda_durex {
+        display: block;
+        float: left;
+        position: relative;
+    }
+    .tienda_durex {
+        margin-bottom: 10%;
+    }
+
+ }
+ 
+/*-------------******************************FIN MEDIA QUERY 1024PX**********************-------------------*/
+/*-------------**************************************************************************-------------------*/
+
+@media screen and (min-width: 640px) and (max-width: 1024px) {
+    
+    body {
+        background: url("../img/header_desktop_3.jpg") no-repeat;
+        background-position: center top;
+    }
+
+    body {
+        background-color:#000; 
+    }
+    .texto_check a, .texto_check_2 a {
+        color:#FFFFFF;
+    }  
+    input[type="checkbox"] {
+       margin-left: -7%; 
+    }
+    
+
+    /*------------- Header-------------------*/
+
+    header {
+        width: 100%;
+        display: block;
+        float: left;
+        position: relative;
+    }
+
+    .logo_cancun_2, .logo_cancun_texto_2, .blank_premios, .blank_logo_small, .blank_logo, .blank_logo_header_2 {
+        display:none;
+    }
+
+    .logo_cancun {
+        float: left;
+        background-position: center;
+        margin-bottom:3%;
+        -webkit-animation-name: bounceIn;
+        animation-name: bounceIn;
+        -webkit-animation-duration: 0.75s;
+        animation-duration: 0.75s;
+    }
+
+
+     @-webkit-keyframes bounceIn {
+  0%, 60%, 75%, 90%, 100% {
+    -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+            transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+            transform: translate3d(0, -100%, 0);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 25%, 0);
+            transform: translate3d(0, 25%, 0);
+  }
+
+  75% {
+    -webkit-transform: translate3d(0, -10%, 0);
+            transform: translate3d(0, -10%, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(0, 5%, 0);
+            transform: translate3d(0, 5%, 0);
+  }
+
+  100% {
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+@keyframes bounceIn {
+  0%, 60%, 75%, 90%, 100% {
+    -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+            transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+            transform: translate3d(0, -100%, 0);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 25%, 0);
+            transform: translate3d(0, 25%, 0);
+  }
+
+  75% {
+    -webkit-transform: translate3d(0, -10%, 0);
+            transform: translate3d(0, -10%, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(0, 5%, 0);
+            transform: translate3d(0, 5%, 0);
+  }
+
+  100% {
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+
+    .logo_cancun_texto {
+        width:454px;
+        float: left;
+    }
+    .blank_logo, .contendedor_logo, .cancun_header_2, .cancun_texto_header_2, .contenedor_logo_2 {
+        float:left;
+        display:block;
+    }
+
+    .cancun_header_2 {
+        margin-top:2%;
+    }
+
+    /*------------- Primer contendor cambiable-------------------*/
+    .general_premios {
+        float: left;
+        position: relative;
+        display:block;
+         overflow: hidden;
+    }
+
+    .premios {
+        height: 100%;
+        position: relative;
+        display: block;
+        float: left;
+        width: 100%;
+    }
+
+    .descripcion_premios {
+        height: 100%;
+        position: relative;
+        display: block;
+        float: left;
+        padding-bottom: 2%;
+        padding-top: 2%;
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    .premio_1, .premio_2, .premio_3, .texto_mecanica {
+        float: left;
+        display: block;
+        width:100%;
+        position:relative;
+    }
+    .texto_mecanica {
+        background: url("../img/fondo_mecanica_texto.png") no-repeat;
+        background-size: 100%;
+        float:left;
+        display: block;
+        margin-top:2%;
+        background-size: 80%;
+        background-position-x: 38%;
+        
+    }
+        
+     .texto_mecanica p {
+        font-family: 'Lato', sans-serif;
+        font-size: 1rem;
+        line-height: 1;
+        width: 100%;
+        height:auto;
+        color:#FFFFFF;
+        font-weight: 300;
+        text-align: center;
+        margin-top:4%;
+        padding-right: 5%;
+    }
+       
+    .mecanica_1, .mecanica_2, .mecanica_3 {
+        float: left;
+        display: block;
+        width:100%;
+        text-align: center;
+        line-height:1;
+        margin-left: 0%;
+    }
+
+    .mecanica_1 {
+        background: url("../img/graphic_mecanica.png") no-repeat;
+        background-size: 100%;
+        
+    }
+
+    .mecanica_2 {
+        background: url("../img/graphic_mecanica_2.png") no-repeat;
+        background-size: 100%;
+        
+    }
+
+    .mecanica_3 {
+        background: url("../img/graphic_mecanica_3.png") no-repeat;
+        background-size: 100%;
+       
+    }
+
+    .mecanica_1 p, .mecanica_2 p, .mecanica_3 p {
+        font-family: 'Lato', sans-serif;
+        font-size: 0.8rem;
+        width: 100%;
+        height:auto;
+        margin:0px auto;
+        padding:0px;
+        color:#FFFFFF;
+        margin-top: 30%;
+        margin-right: 5%;
+        font-weight: 300;          
+    }
+
+    .compra, .texto_compra {
+        display: block;
+        float: left;
+        position: relative;
+    }
+
+    .compra {
+        margin-top: 1%;
+        margin-left: 4%
+        ;
+    }
+    .texto_compra {
+        margin-top:4%;
+        margin-left: 0;
+    }
+
+    .texto_compra p {
+        display: block;
+        float: left;
+        position: relative;
+        background: url("../img/fondo_comprar.png") no-repeat;
+        background-size: 100%;
+        font-family: 'Lato', sans-serif;
+        font-size: 0.8rem;
+        color:#FFFFFF;
+        font-weight: 300;
+        width:100%;
+        text-align: center;
+        }
+
+    .logos_compra {
+        display: block;
+        float: left;
+        position: relative;
+    }
+    .texto_terminos {
+        font-family: 'Lato', sans-serif;
+        font-size: 0.8rem;
+        line-height: 1;
+        width: 100%;
+        height:auto;
+        color:#FFFFFF;
+        font-weight: 300;
+        display: block;
+        float: left;
+        position: relative;
+    }
+
+    .texto_terminos a {
+        color:#FC007E;
+        text-decoration: none;
+    }
+
+    .participa {
+       margin-top:2%;
+    }
+    .participa, .btn_participa, .flecha_participa, .coco_loco, .plugin_redes, .ya_participaste {
+        position: relative;
+        display: block;
+        float: left;
+        position: relative;
+    }
+
+    .coco_loco {
+        z-index: 20;
+        margin-bottom: 5%;
+    }
+
+    .btn_enviar {
+        z-index: 20;
+        margin-bottom:0;
+    }
+    .flecha_participa {
+        margin-left: -16%;
+    z-index: 10;
+    margin-top: 9%;
+    }
+    
+    .plugin_redes {
+        margin-left:2%;
+    }
+
+    .twitter_megusta {
+        margin-top: 15%;
+    }
+     
+    .ya_participaste {
+        margin-left: 2%;
+    }
+
+    .ya_participaste img {
+        float: right;
+        margin-top: 40%
+    }
+
+    .blank_mecanica {
+        display:none;
+    }
+
+    /*------------- Segundo contendor cambiable (FORMULARIO)-------------------*/
+    .formulario_contendedor {
+        display:none;
+        float:left;
+        position: relative;
+        overflow: hidden;
+    }
+    .factura_center {
+        margin:0px auto;
+        padding:0px;
+    }
+    .descripcion_factura {
+        height: 100%;
+        position: relative;
+        display: block;
+        float: left;
+        padding-bottom: 2%;
+        padding-top: 2%;
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    .info_factura, .info_factura_2, .info_factura_3 {
+        float: left;
+        display: block;
+        width:100%;
+        text-align: center;
+        line-height:1;
+        margin-left: 0%;
+    }
+
+    .info_factura {
+        background: url("../img/graphic_ayuda_form.png") no-repeat;
+        background-size: 100%;
+        margin-left: 3%;
+    }
+
+    .info_factura_2 {
+        background: url("../img/graphic_ayuda_form_2.png") no-repeat;
+        background-size: 100%;    
+    }
+
+    .info_factura_3 {
+        background: url("../img/graphic_ayuda_form_3.png") no-repeat;
+        background-size: 100%;
+    }
+
+    .info_factura p, .info_factura_2 p, .info_factura_3 p {
+        font-family: 'Lato', sans-serif;
+        font-size: 0.8rem;
+        width: 100%;
+        height:auto;
+        margin:0px auto;
+        padding:0px;
+        color:#FFFFFF;
+        margin-top: 37%;
+        margin-right: 5%;
+        font-weight: 300;          
+    }
+
+    .header_fomulario {
+        margin-top: 2%;
+    }
+
+    .formulario {
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+    
+    .header_fomulario, .blank_mecanica_2, .texto_explicativo, .texto_campo_examinar, .formulario, .columna_1, .columna_2, .columna_3, .texto_campo, .texto_campo_sexo, .campo, .input {
+        display: block;
+        float:left;
+        position: relative;
+    }
+
+    .header_fomulario {
+        margin-top: 2%;
+         -webkit-animation-name: bounceIn;
+        animation-name: bounceIn;
+        -webkit-animation-duration: 1.5s;
+        animation-duration: 1.5s;
+    }
+
+     @-webkit-keyframes bounceIn {
+  
+    0% {
+    opacity: 0;
+    }
+
+    60% {
+    opacity: 1;
+    }
+
+    100% {
+    opacity: 1;
+    }
+  
+}
+
+@keyframes bounceIn {
+  
+  0% {
+    opacity: 0;
+    }
+
+    60% {
+    opacity: 1;
+    }
+
+    100% {
+    opacity: 1;
+    }
+}
+
+    .radio_button {
+        margin-bottom: 4%;
+        line-height: 2;
+    }
+
+    .columna_1, .columna_2 {
+        margin-left:1.1rem;    
+    }
+
+    .campo {
+        height:100%;
+    }
+
+    .texto_campo, .texto_campo_sexo {
+        color: #fff;
+        font-family: 'Lato', sans-serif;
+        font-size: 0.85rem;
+        line-height: 1;
+        font-weight: 300;
+        width: 100%;
+        text-align: right;
+        padding-right: 5%;
+        margin-top:3%;
+        margin-bottom: 6%;
+    }
+
+    .texto_campo_examinar {
+        color: #fff;
+        font-family: 'Lato', sans-serif;
+        font-size: 1rem;
+        line-height: 1;
+        font-weight: 300;
+        width: 100%;
+        text-align: right;
+        padding-right: 14%;
+        margin-top:3%;
+        margin-bottom: 6%;
+    }
+
+    .blank_campo_formulario, .blank_subir_factura {
+        display: none;
+    }
+
+    input {
+        height: 20px;
+    }
+    label {
+        color: #fff;
+        font-family: 'Lato', sans-serif;
+        font-size: 1rem;
+        line-height: 1;
+        font-weight: 300;
+        display: inline-block;
+        margin-left: 0.44444rem;
+        margin-right: 0.88889rem;
+        margin-bottom: 0;
+        vertical-align: baseline;
+    }
+    .texto_check {
+         line-height: 1;
+         font-size: 0.9rem;
+         margin-left:2%;
+         text-align: right;
+         margin-top: 0;
+
+    }
+
+     .texto_check_2 {
+         line-height: 1;
+         font-size: 0.9rem;
+         margin-left:2%;
+         text-align: right;
+    }
+
+    #checkbox1 {
+        margin-top:0;
+    }
+
+    .texto_subir_factura {
+        color: #fff;
+        font-family: 'Lato', sans-serif;
+        font-size: 1.2rem;
+        line-height: 1;
+        font-weight: 300;
+        text-align: center;
+        margin:0px auto;
+    }
+    .contenedor_subir_factura {
+        margin:0px auto;
+        padding: 0px;
+
+    }
+    .contenedor_subir_factura_2 {
+        margin:0px auto;
+        padding: 0px;
+        margin-top:3%;
+
+    }
+    .linea_separador {
+        background: url("../img/linea.png") no-repeat;
+        background-size: 100%;
+        }
+    .texto_campo_tienda, input file {
+        color: #fff;
+        font-family: 'Lato', sans-serif;
+        font-size: 1rem;
+        line-height: 1;
+        font-weight: 300;
+        width: 100%;
+        text-align: center;
+        margin-top:0%;
+        margin-bottom: 6%;
+    }
+    .input_tienda {
+        margin:0px auto;
+        padding:0px;
+    }
+    .texto_registrado_2 {
+        font-weight: 400;
+    }
+
+    .terminos_2, .texto_registrado {
+        display:none;
+    }
+    
+    .label_1 {
+        color:#FF12EE;
+    }
+        /*------------- Tercer contendor cambiable (GRACIAS)-------------------*/
+    .contendedor_gracias {
+        display: none;
+         overflow: hidden;
+    }
+    .contenedor_logo {
+        float: left;
+        margin-top: 5%;
+    }
+    .logo_cancun_gracias {
+        width:362px;
+        margin:0px auto;
+        padding:0px;
+    }    
+    .gracias {
+        float: left;
+        position:relative;
+        display:block;
+        background: url("../img/texto_gracias.png") no-repeat;
+        background-size: 100%;
+        width: 100%;
+        margin-top: 2%;
+    }
+    .twitter {
+        float: left;
+        position:relative;
+        display:block;
+        margin-top:5%;
+        padding-right: 2%;
+        margin-left: -7%;
+    }
+    .blank_tienda_durex, .tienda_durex {
+        display: block;
+        float: left;
+        position: relative;
+    }
+    .tienda_durex {
+        margin-bottom: 10%;
+    }
+    
+} 
+
+
+/*-------------******************************FIN MEDIA QUERY 640PX a 1024px**********************-------------------*/
+/*-------------**************************************************************************-------------------*/
+
+
+@media screen and (min-width: 0px) and (max-width: 640px) {
+    
+    body {
+        background: url("../img/header_desktop_3.jpg") no-repeat;
+        background-position: center top;
+    }
+
+    body {
+        background-color:#000; 
+    }
+    .texto_check a, .texto_check_2 a {
+        color:#FFFFFF;
+    }  
+
+   /*------------- Header-------------------*/
+
+    header {
+        width: 100%;
+        display: block;
+        float: left;
+        position: relative;
+    }
+
+    .logo_cancun {
+        float: left;
+        margin-top: 3%;
+        -webkit-animation-name: bounceIn;
+        animation-name: bounceIn;
+        -webkit-animation-duration: 0.75s;
+        animation-duration: 0.75s;
+    }
+
+
+     @-webkit-keyframes bounceIn {
+  0%, 60%, 75%, 90%, 100% {
+    -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+            transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+            transform: translate3d(0, -100%, 0);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 25%, 0);
+            transform: translate3d(0, 25%, 0);
+  }
+
+  75% {
+    -webkit-transform: translate3d(0, -10%, 0);
+            transform: translate3d(0, -10%, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(0, 5%, 0);
+            transform: translate3d(0, 5%, 0);
+  }
+
+  100% {
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+@keyframes bounceIn {
+  0%, 60%, 75%, 90%, 100% {
+    -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+            transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+            transform: translate3d(0, -100%, 0);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 25%, 0);
+            transform: translate3d(0, 25%, 0);
+  }
+
+  75% {
+    -webkit-transform: translate3d(0, -10%, 0);
+            transform: translate3d(0, -10%, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(0, 5%, 0);
+            transform: translate3d(0, 5%, 0);
+  }
+
+  100% {
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+
+    .logo_cancun_texto {
+        display: none;
+    }
+
+    .blank_logo {
+        display:none;
+    }
+
+    .blank_logo_small, .blank_logo_header_2, .cancun_header_2 {
+        display:block;
+        float: left;
+    }
+    .logo_cancun_2 {
+        display:none;
+    }
+
+    .logo_cancun_texto_2 {
+        margin-top:-2%;
+    }
+
+    .cancun_texto_header_2 {
+        display:none;
+    }
+
+    .cancun_header_2{
+        margin-top:2%;
+    }
+    /*------------- Primer contendor cambiable-------------------*/
+    .general_premios {
+        float: left;
+        position: relative;
+        display:block;
+        overflow: hidden;
+    }
+
+    .premios {
+        height: 100%;
+        position: relative;
+        display: block;
+        float: left;
+        width: 100%;
+    }
+
+    .descripcion_premios {
+        height: 100%;
+        position: relative;
+        display: block;
+        float: left;
+        padding-top: 2%;
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    .premio_1, .premio_2, .premio_3, .blank_premios, .texto_mecanica {
+        float: left;
+        display: block;
+        width:100%;
+        position:relative;
+    }
+
+    .blank_premios {
+        display: none;
+    }
+    .texto_mecanica {
+        background: url("../img/fondo_mecanica_texto.png") no-repeat;
+        background-size: 100%;
+        float:left;
+        display: block;
+        margin-top:2%;
+        margin-right: 2%;
+    }
+        
+     .texto_mecanica p {
+        font-family: 'Lato', sans-serif;
+        font-size: 1rem;
+        line-height: 1;
+        width: 100%;
+        height:auto;
+        color:#FFFFFF;
+        font-weight: 300;
+        text-align: center;
+        margin-top:4%;
+        padding-right: 5%;
+    }
+       
+    .mecanica_1, .mecanica_2, .mecanica_3, .blank_mecanica {
+        float: left;
+        display: block;
+        width:100%;
+        text-align: center;
+        line-height:1;
+        margin-left: 0%;
+    }
+
+    .mecanica_1 {
+        background: url("../img/graphic_mecanica.png") no-repeat;
+        background-size: 100%;
+    }
+
+    .mecanica_2 {
+        background: url("../img/graphic_mecanica_2.png") no-repeat;
+        background-size: 100%;
+    }
+
+    .mecanica_3 {
+        background: url("../img/graphic_mecanica_3.png") no-repeat;
+        background-size: 100%;
+    }
+
+    .mecanica_1 p, .mecanica_2 p, .mecanica_3 p {
+        font-family: 'Lato', sans-serif;
+        width: 100%;
+        height:auto;
+        margin:0px auto;
+        padding:0px;
+        color:#FFFFFF;
+        margin-top: 30%;
+        margin-right: 5%;
+        font-weight: 300;          
+    }
+
+    .compra, .texto_compra {
+        display: block;
+        float: left;
+        position: relative;
+    }
+
+    .compra {
+        background-color: rgba(0, 0, 0, 0.7);
+        padding-bottom: 5%;
+
+    }
+    .texto_compra {
+        margin-top:7%;
+        }
+
+    .texto_compra p {
+        display: block;
+        float: left;
+        position: relative;
+        background: url("../img/fondo_comprar.png") no-repeat;
+        background-size: 100%;
+        font-family: 'Lato', sans-serif;
+        font-size: 0.8rem;
+        color:#FFFFFF;
+        font-weight: 300;
+        width:100%;
+        text-align: center;
+        }
+
+    .logos_compra {
+        display: block;
+        float: left;
+        position: relative;
+    }
+    .texto_terminos {
+        font-family: 'Lato', sans-serif;
+        font-size: 0.8rem;
+        line-height: 1;
+        width: 100%;
+        height:auto;
+        color:#FFFFFF;
+        font-weight: 300;
+        text-align: center;
+        display: block;
+        float: left;
+        position: relative;
+    }
+
+    .texto_terminos a {
+        color:#FC007E;
+        text-decoration: none;
+    }
+
+    .participa {
+       margin-top:2%;
+    }
+    .participa, .btn_participa, .flecha_participa, .coco_loco, .plugin_redes, .ya_participaste {
+        position: relative;
+        display: block;
+        float: left;
+        position: relative;
+    }
+
+    .coco_loco {
+        z-index: 20;
+    }
+    .flecha_participa {
+        margin-left: -16%;
+    z-index: 10;
+    margin-top: 9%;
+    }
+    
+    .plugin_redes {
+        display: none;
+    }
+
+    .footer {
+        background: url("../img/fondo_footer.png") no-repeat;
+        background-size:100%;
+        background-position: bottom;
+    }
+    .twitter_megusta {
+        margin-top: 15%;
+    }
+     
+    .ya_participaste {
+        margin-left: 0;
+    }
+
+    .ya_participaste img {
+        float: right;
+        margin-top: 40%
+    }
+
+
+    /*------------- Segundo contendor cambiable (FORMULARIO)-------------------*/
+    .formulario_contendedor {
+        display:none;
+        float:left;
+        position: relative;
+         overflow: hidden;
+    }
+    .factura_center {
+        display:none;
+    }
+    .descripcion_factura {
+        height: 100%;
+        position: relative;
+        display: block;
+        float: left;
+        padding-bottom: 5%;
+        padding-top: 2%;
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    .info_factura, .info_factura_2, .info_factura_3, .blank_mecanica {
+        float: left;
+        display: block;
+        width:100%;
+        text-align: center;
+        line-height:1;
+        margin-left: 0%;
+    }
+
+    .info_factura {
+        background: url("../img/graphic_ayuda_form.png") no-repeat;
+        background-size: 100%;
+    }
+
+    .info_factura_2 {
+        background: url("../img/graphic_ayuda_form_2.png") no-repeat;
+        background-size: 100%;    
+    }
+
+    .info_factura_3 {
+        background: url("../img/graphic_ayuda_form_3.png") no-repeat;
+        background-size: 100%;
+    }
+
+    .info_factura p, .info_factura_2 p, .info_factura_3 p {
+        font-family: 'Lato', sans-serif;
+        font-size: 0.8rem;
+        width: 100%;
+        height:auto;
+        margin:0px auto;
+        padding:0px;
+        color:#FFFFFF;
+        margin-top: 37%;
+        margin-right: 5%;
+        font-weight: 300;          
+    }
+
+    .header_fomulario {
+        margin-top: 2%;
+        -webkit-animation-name: _header;
+        animation-name: header;
+        -webkit-animation-duration: 1.5s;
+        animation-duration: 1.5s;
+    }
+
+     @-webkit-keyframes _header {
+  
+    0% {
+    opacity: 0;
+    }
+
+    60% {
+    opacity: 1;
+    }
+
+    100% {
+    opacity: 1;
+    }
+  
+}
+
+@keyframes _header {
+  
+  0% {
+    opacity: 0;
+    }
+
+    60% {
+    opacity: 1;
+    }
+
+    100% {
+    opacity: 1;
+    }
+}
+  
+
+    .formulario {
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+    
+    .header_fomulario, .texto_explicativo, .formulario, .columna_1, .columna_2, .columna_3, .campo, .input, .blank_campo_formulario, .blank_subir_factura {
+        display: block;
+        float:left;
+        position: relative;
+    }
+    .columna_1 {
+        margin-left:0; 
+    }
+
+    .campo {
+        height:100%;
+        margin-bottom: 1%;
+    }
+
+    .texto_campo, .texto_campo_sexo {
+        color: #fff;
+        font-family: 'Lato', sans-serif;
+        font-size: 1rem;
+        line-height: 1;
+        font-weight: 300;
+        width: 100%;
+        text-align: right;
+        padding-right: 5%;
+        margin-top:1%;
+        float: left;
+    }
+    input {
+        height: 20px;
+    }
+    label {
+        color: #fff;
+        font-family: 'Lato', sans-serif;
+        font-size: 1rem;
+        line-height: 1;
+        font-weight: 300;
+        display: inline-block;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 0;
+        vertical-align: baseline;
+    }
+    .texto_check, .texto_check_2 {
+         line-height: 1;
+         font-size: 0.9rem;
+         margin-left:0;
+         text-align: right;
+    }
+    #checkbox1 {
+        margin-top:0;
+    }
+
+    .texto_subir_factura {
+        color: #fff;
+        font-family: 'Lato', sans-serif;
+        font-size: 1.2rem;
+        line-height: 1;
+        font-weight: 300;
+        text-align: center;
+        margin:0px auto;
+    }
+    .contenedor_subir_factura {
+        margin:0px auto;
+        padding: 0px;
+
+    }
+    .contenedor_subir_factura_2 {
+        margin:0px auto;
+        padding: 0px;
+        margin-top:3%;
+
+    }
+    .linea_separador {
+        background: url("../img/linea.png") no-repeat;
+        background-size: 100%;
+        }
+
+    .texto_campo_tienda, input file {
+        color: #fff;
+        font-family: 'Lato', sans-serif;
+        font-size: 1rem;
+        line-height: 1;
+        font-weight: 300;
+        width: 100%;
+        text-align: center;
+        margin-top:0%;
+        margin-bottom: 6%;
+    }
+
+    .texto_registrado {
+        font-family: 'Lato', sans-serif;
+        font-size: 1rem;
+        line-height: 1;
+        font-weight: 300;
+        width: 100%;
+        text-align: center;
+        margin-top:4%;
+        padding-right: 1%;
+        padding-left: 1%;
+    }
+    .input_tienda {
+        margin:0px auto;
+        padding:0px;
+    }
+    
+    .terminos, .texto_registrado_2 {
+        display: none;
+    }
+
+    .label_1 {
+        margin-left: 5%;
+        color:#FF12EE;
+    }
+   
+   /*------------- Tercer contendor cambiable (GRACIAS)-------------------*/
+           
+    .contendedor_gracias {
+        display: none;
+        overflow: hidden;
+    }
+    .contenedor_logo {
+        float: left;
+        margin-top: 5%;
+    }
+    .logo_cancun_gracias {
+        margin:0px auto;
+        padding:0px;
+    }    
+
+    /* ANIMACION LOGO GRACIAS */
+
+    
+
+    /* FIN ANIMACION LOGO GRACIAS */
+
+    .gracias {
+        float: left;
+        position:relative;
+        display:block;
+        background: url("../img/texto_gracias.png") no-repeat;
+        background-size: 100%;
+        width: 100%;
+    }
+    .twitter {
+        float: left;
+        position:relative;
+        display:block;
+        margin-top:5%;
+        padding-right: 2%;
+    }
+    .blank_tienda_durex, .tienda_durex {
+        display: block;
+        float: left;
+        position: relative;
+    }
+    .tienda_durex {
+        margin-bottom: 10%;
+    }
+} 
+
+
+
+@media screen and (min-width: 360px) and (max-width: 640px) {
+    .logo_cancun_texto_2 {
+        display: block;
+        float: left;
+        }
+    .logo_cancun_2 { 
+        display: block;
+        float: left;
+        -webkit-animation-name: bounceIn;
+        animation-name: bounceIn;
+        -webkit-animation-duration: 0.75s;
+        animation-duration: 0.75s;
+    }
+
+
+     @-webkit-keyframes bounceIn {
+  0%, 60%, 75%, 90%, 100% {
+    -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+            transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+            transform: translate3d(0, -100%, 0);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 25%, 0);
+            transform: translate3d(0, 25%, 0);
+  }
+
+  75% {
+    -webkit-transform: translate3d(0, -10%, 0);
+            transform: translate3d(0, -10%, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(0, 5%, 0);
+            transform: translate3d(0, 5%, 0);
+  }
+
+  100% {
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+@keyframes bounceIn {
+  0%, 60%, 75%, 90%, 100% {
+    -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+            transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+            transform: translate3d(0, -100%, 0);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 25%, 0);
+            transform: translate3d(0, 25%, 0);
+  }
+
+  75% {
+    -webkit-transform: translate3d(0, -10%, 0);
+            transform: translate3d(0, -10%, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(0, 5%, 0);
+            transform: translate3d(0, 5%, 0);
+  }
+
+  100% {
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .logo_cancun, .logo_cancun_texto {
+        display:none;
+    }
+    .mecanica_1 p, .mecanica_2 p, .mecanica_3 p {
+    font-family: 'Lato',sans-serif;
+    font-size: 0.8rem;
+    }
+ }   
+
+
+
+
+
+@media screen and (min-width: 0px) and (max-width: 360px) {
+    .logo_cancun_texto {
+        display:none;
+    }
+    .logo_cancun {
+        display:none;
+    }    
+
+    .blank_logo_samll, .logo_cancun_2, .logo_cancun_texto_2 {
+        display: block;
+        float:left;
+
+    }
+    .mecanica_1 p, .mecanica_2 p, .mecanica_3 p {
+        font-family: 'Lato',sans-serif;
+        font-size: 0.5rem;
+        padding-right: 1%;
+        padding-left: 1%;
+    }
+
+    .mecanica_1, .mecanica_2, .mecanica_3 {
+        margin-left: 0;
+    }
+    .texto_mecanica p {
+        font-family: 'Lato',sans-serif;
+        font-size: 0.7rem;
+        margin-top: 7%;
+    }
+    .texto_terminos {
+        margin-bottom: 0;
+    }
+    .texto_campo, .texto_campo_sexo, .label_1 {
+    font-size: 0.8rem;
+    line-height: 2;
+    }
+}
+
+@media screen and (min-width: 360px) and (max-width: 500px) {
+    .mecanica_1 p, .mecanica_2 p, .mecanica_3 p {
+        font-family: 'Lato',sans-serif;
+        font-size: 0.6rem;
+    }
+    
+}
+
+@media screen and (min-width: 640px) and (max-width: 800px) {
+    .texto_terminos {
+        margin-bottom: 5%;
+    }
+    .mecanica_1 p, .mecanica_2 p, .mecanica_3 p {
+        font-size: 0.7rem;
+    }
+}
+
+@media screen and (min-width: 410px) and (max-width: 640px) {
+    .twitter {
+        margin-left: 2%;
+    }
+
+
