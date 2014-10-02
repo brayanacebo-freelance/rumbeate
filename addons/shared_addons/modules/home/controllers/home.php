@@ -14,86 +14,87 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Home extends Public_Controller {
 
-    public function __construct()
-    {
-        parent::__construct();
-        $this->load->model('registro_model');
-    }
+	public function __construct()
+	{
+		parent::__construct();
+		$this->load->model('registro_model');
+	}
 	
     // -----------------------------------------------------------------
 
 
 
-    public function index()
-    {
-        $this->template
-                ->build('index');
-    }
+	public function index()
+	{
+		$this->template
+		->build('index');
+	}
 
 
     /*
      *Enviar correo
      */
 
- //    function send()
- //    {
- //        $this->form_validation->set_rules('name', 'Nombre y Apellido', 'required|trim|max_length[100]');
- //        $this->form_validation->set_rules('email', 'Correo', 'required|trim|valid_email|max_length[100]');
- //        $this->form_validation->set_rules('phone', 'Teléfono', 'trim|max_length[30]');
- //        $this->form_validation->set_rules('cell', 'Celular', 'trim|max_length[30]');
- //        $this->form_validation->set_rules('company', 'Empresa/Organización', 'trim|max_length[100]');
- //        $this->form_validation->set_rules('message', 'Mensaje', 'required|trim|max_length[455]');
-		
-	// 	$statusJson = 'error';
-	// 	$msgJson = 'Por favor intenta de mas tarde';
-		
- //        if ($this->form_validation->run() === TRUE)
- //        {
-	// 		$_contact_us = $this->contact_us_m->get_all();
+    function send()
+    {
 
-	//         $contact_us = array();
-	
-	//         if (count($_contact_us) > 0) {
-	
-	//             $contact_us = $_contact_us[0];
-	
-	//         }
-	//        	$post = (object) $this->input->post(null);
+    	$this->form_validation->set_rules('cedula', 'Cedula', 'required|trim|max_length[12]');
+    	$this->form_validation->set_rules('sexo', 'Sexo', 'required|trim');
+    	$this->form_validation->set_rules('nombre', 'Nombre', 'required|trim');
+    	$this->form_validation->set_rules('apellidos', 'Apellidos', 'required|trim');
+    	$this->form_validation->set_rules('email', 'Email', 'required|trim|valid_email');
+    	$this->form_validation->set_rules('ciudad', 'Ciudad', 'required|trim');
+    	$this->form_validation->set_rules('celular', 'Celular', 'required|trim');
+    	$this->form_validation->set_rules('fecha_nacimiento', 'Fecha de nacimiento', 'required|trim');
+    	$this->form_validation->set_rules('numero_factura', 'Numero de factura', 'required|trim');
+    	
+    	$statusJson = 'error';
+    	$msgJson = 'Por favor intenta de mas tarde';
+    	
+    	if ($this->form_validation->run() === TRUE)
+    	{
 
- //            $data['post'] = array(
- //                'name' => $post->name,
- //                'email' => $post->email,
- //                'phone' => $post->phone,
- //                'cell' => $post->cell,
- //                'company' => $post->company,
- //                'message' => $post->message,
- //            );
+    		$post = (object) $this->input->post(null);
 
- //            //Validate sendmail
- //            if( $this->contact_us_emails_m->insert($data['post']))
- //            {
-	// 			$this->send_email_to_user($data['post'], $contact_us->email);
- //                //$this->session->set_flashdata('success', 'Su mensaje a sido enviado');
- //                //redirect(base_url().'/contact_us');
-	// 			$statusJson = '';
-	// 			$msgJson = 'Su mensaje ha sido enviado';
- //            }
- //            else
- //            {
- //                //$this->session->set_flashdata('error', 'Error Mailing, Contact the Webmaster');
- //                //redirect(base_url().'/contact_us');
- //                $statusJson = 'error';
-	// 			$msgJson = 'Error Mailing, Contact the Webmaster';
- //            }
- //        } else {
+    		$data['post'] = array(
+    			'cedula' => $post->cedula,
+    			'sexo' => $post->sexo,
+    			'nombre' => $post->nombre,
+    			'apellidos' => $post->apellidos,
+    			'email' => $post->email,
+    			'ciudad' => $post->ciudad,
+    			'celular' => $post->celular,
+    			'fecha_nacimiento' => $post->fecha_nacimiento,
+    			'numero_factura' => $post->numero_factura
+    			);
 
- //            //$this->session->set_flashdata('error', validation_errors());
- //            //redirect(base_url().'/contact_us');
-	// 		$statusJson = 'error';
-	// 		$msgJson = validation_errors();
- //        }
-	// 	echo json_encode(array('status' => $statusJson, 'msg' => $msgJson));
- //    }
+            //Validate sendmail
+    		if( $this->registro_model->insert($data['post']))
+    		{
+				// $this->send_email_to_user($data['post'], $contact_us->email);
+                //$this->session->set_flashdata('success', 'Su mensaje a sido enviado');
+                //redirect(base_url().'/contact_us');
+    			$statusJson = '';
+    			$msgJson = 'Su mensaje ha sido enviado';
+    		}
+    		else
+    		{
+                //$this->session->set_flashdata('error', 'Error Mailing, Contact the Webmaster');
+                //redirect(base_url().'/contact_us');
+    			$statusJson = 'error';
+    			$msgJson = 'Error Mailing, Contact the Webmaster';
+    		}
+  //       } else {
+
+  //           //$this->session->set_flashdata('error', validation_errors());
+  //           //redirect(base_url().'/contact_us');
+		// 	$statusJson = 'error';
+		// 	$msgJson = validation_errors();
+  //       }
+		// echo json_encode(array('status' => $statusJson, 'msg' => $msgJson));
+    		echo 'status: '.$statusJson.' msg: '.$msgJson;
+    	}
+    }
 
 
 	// /**
@@ -107,7 +108,7 @@ class Home extends Public_Controller {
 	// {
 	// 	$this->load->library('email');		
 	// 	$this->load->library('user_agent');
-		
+    
 	// 	Events::trigger('email', array(
 	// 		'name' => $data['name'],
 	// 		'email' => $data['email'],

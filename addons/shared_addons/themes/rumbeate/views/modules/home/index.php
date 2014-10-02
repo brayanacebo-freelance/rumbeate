@@ -196,7 +196,12 @@
  						</div>
 
  						<div class="large-12 medium-12 small-12 formulario">
- 							<form>
+
+
+ 							<!-- INICIO DEL FORMULARIO -->
+
+
+ 							<?php echo form_open(site_url('home/send'), 'class="crud form_contac_ajax"'); ?>        
  								<ul class="columna_1 large-7 medium-7 small-12">
  									<div class="texto_registrado small-12" style="color: white">¿Ya estás registrado? <br />Digita solo tú número de cédula.
  									</div>
@@ -207,58 +212,58 @@
  									<li class="campo large-6 medium-6 small-6">
  										<div class="texto_campo large-5 medium-5 small-6">Cédula</div>
  										<div class="input large-7 medium-7 small-6" >
- 											<input type="text" class="campo_input" style="height:30px;"/>
+ 											<input type="text" class="campo_input" style="height:30px;" name="cedula"/>
  										</div>
  									</li>
 
  									<li class="campo large-6 medium-6 small-6">
  										<div class="texto_campo_sexo large-5 medium-5 small-4" > Sexo </div>
  										<div class="input radio_button large-7 medium-7 small-6">
- 											<input type="checkbox" name="feminino" value="sexo_femenino" class="radio_button" id="sexo_femenino">
+ 											<input type="checkbox" name="sexo" value="Femenino" class="radio_button" id="sexo_femenino">
  											<label class="label_1">F</label>  
- 											<input type="checkbox" name="masculino" value="sexo_masculino" class="radio_button" id="sexo_masculino" style=""><label class="label_1">M</label>  
+ 											<input type="checkbox" name="sexo" value="Masculino" class="radio_button" id="sexo_masculino" style=""><label class="label_1">M</label>  
  										</div>
  									</li>
 
  									<li class="campo large-6 medium-6 small-12">
  										<div class="texto_campo large-5 medium-5 small-3" > Nombre</div>
  										<div class="input large-7 medium-7 small-8" >
- 											<input type="text" class="campo_input" style="height:30px;"/>
+ 											<input type="text" class="campo_input" style="height:30px;" name="nombre"/>
  										</div>
  									</li>
 
  									<li class="campo large-6 medium-6 small-12">
  										<div class="texto_campo large-5 medium-5 small-3" > Apellidos</div>
  										<div class="input large-7 medium-7 small-8" >
- 											<input type="text" class="campo_input" style="height:30px;"/>
+ 											<input type="text" class="campo_input" style="height:30px;" name="apellidos"/>
  										</div>
  									</li>
 
  									<li class="campo large-6 medium-6 small-12">
  										<div class="texto_campo large-5 medium-5 small-3" > Email</div>
  										<div class="input large-7 medium-7 small-8" >
- 											<input type="text" class="campo_input" style="height:30px;"/>
+ 											<input type="text" class="campo_input" style="height:30px;" name="email"/>
  										</div>
  									</li>
 
  									<li class="campo large-6 medium-6 small-12">
  										<div class="texto_campo large-5 medium-5 small-3" > Ciudad</div>
  										<div class="input large-7 medium-7 small-8" >
- 											<input type="text" class="campo_input" style="height:30px;"/>
+ 											<input type="text" class="campo_input" style="height:30px;" name="ciudad"/>
  										</div>
  									</li>
 
  									<li class="campo large-6 medium-6 small-12">
  										<div class="texto_campo large-5 medium-5 small-3" > Celular</div>
  										<div class="input large-7 medium-7 small-8" >
- 											<input type="text" class="campo_input" style="height:30px;"/>
+ 											<input type="text" class="campo_input" style="height:30px;" name="celular"/>
  										</div>
  									</li>
 
  									<li class="campo large-6 medium-6 small-12">
  										<div class="texto_campo large-5 medium-5 small-6" > Fecha de nacimiento</div>
  										<div class="input large-7 medium-7 small-5" >
- 											<input type="text" class="campo_input" style="height:30px;"/>
+ 											<input type="text" class="campo_input" style="height:30px;" name="fecha_nacimiento"/>
  										</div>
  									</li>
 
@@ -303,6 +308,7 @@
 												-->
 												<div class="small-3 blank_subir_factura">&nbsp
 												</div>
+												<input type="file" name="archivo">
 												<a href="#" class="button large-10 medium-10 small-6" >Examinar</a>
 											</div>
 										</div>
@@ -316,11 +322,18 @@
 										<div class="texto_campo_tienda large-12 medium-12 small-12" > Si compraste en la Tienda Durex, solo ingresa el número de la factura:
 										</div>
 										<div class="input_tienda large-7 medium-7 small-7" >
-											<input type="text" class="campo_input" style="height:30px;"/>
+											<input type="text" class="campo_input" style="height:30px;" name="numero_factura"/>
 										</div>
 									</li>
 								</ul>
-							</form>
+
+								<input type="submit" value"Enviar">
+							<?php echo form_close(); ?>
+
+
+							<!-- FIN DEL FORMULARIO -->
+
+
 						</div>
 						
 						<div class="large-5 medium-5 small-5 plugin_redes">
