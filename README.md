@@ -1,19 +1,13 @@
-# Boilerplate Pyro V2
+# Rumbeate
 
-* [Sitio Web](http://brayanacebo.com)
+* [Autor](http://brayanacebo.com)
 * [Documentación General del CMS](https://www.pyrocms.com/documentation)
-* [Documentación Tema por Defecto Front](https://www.pyrocms.com/store/details/bootstrap_3_with_bootswatch)
-* [Licencia](http://pyrocms.com/legal/license)
 * [Foros Generales](http://forum.pyrocms.com)
-* Version: 2.0
-
-## Equipo
-
-* [Brayan Acebo](http://brayanacebo.com)
+* Version: 1.0
 
 ## Descripción
 
-Este proyecto esta desarrollado con el fin colaborativo de tener un repositorio de módulos desarrollados y testeados por la comunidad de programadores.
+Proyecto basico
 
 Si usted desea colaborar por favor comuníquese con el equipo internamente.
 
@@ -21,7 +15,7 @@ Si usted desea colaborar por favor comuníquese con el equipo internamente.
 
 Si usted esta viendo esto es por que tiene un minino de permisos de lectura; siendo así puede clonar o descargar el proyecto e iniciar su propia instalación. Dentro encontrara el .sql con la base de datos en un directorio llamado docs y su configuración la puede hacer en system/cms/config/database.php
 
-Instale por favor la base de datos llamada pyro-v2.sql, entre a las misma y busque la tabla default_users y edite el primer registro (brayanacebo@gmail.com) con su correo. La clave por defecto es "Colombia"; Asi usted tendrá los accesos de desarrollador.
+Instale por favor la base de datos llamada rumbeate.sql, entre a las misma y busque la tabla default_users y edite el primer registro (brayanacebo@gmail.com) con su correo. La clave por defecto es "Colombia"; Asi usted tendrá los accesos de desarrollador.
 
 Es probable que necesite darle permisos a los siguientes directorios-
 
@@ -43,18 +37,6 @@ Recomendamos siempre que usted desee hacer un nuevo proyecto bajar nuevamente el
 
 ## Bugs
 
-* [Issue tracker](https://github.com/all-boilerplates/pyro-v2/issues/new)
+* [Issue tracker](https://github.com/brayanacebo-freelance/rumbeate/issues/new)
 
 Antes de informar sobre errores o solicitar cualquier característica, compruebe que no existe ya.
-
-## Gracias
-
-### Contribuidores
-
-* [Brayan Acebo](http://brayanacebo.com)
-
-¿Crees que deberías estar en esta lista? Te añadiremos en tu próxima contribución.
-
-### Traductores
-
-Los esperamos pronto!!

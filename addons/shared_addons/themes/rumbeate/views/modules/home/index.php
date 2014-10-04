@@ -98,7 +98,7 @@
  						</div>
 
  						<div class="large-12 medium-12 small-12 texto_terminos">
- 							Conoce los términos y condiciones <a href="terminos_condiciones.html" target="_blank">aquí.</a>
+ 							Conoce los términos y condiciones <a href="home/terminos_y_condiciones" target="_blank">aquí.</a>
  						</div>
  						
  					</div>
@@ -222,7 +222,7 @@
 
  								<li class="campo large-6 medium-6 small-6">
  									<div class="texto_campo_sexo large-5 medium-5 small-4" > Sexo </div>
- 									<div class="input radio_button large-7 medium-7 small-6">
+ 									<div class="input radio_button large-7 medium-7 small-6" id="sexoo">
  										<input type="radio" name="sexo" value="Femenino" class="radio_button" id="sexo_femenino" <?php echo set_checkbox('sexo', 'Femenino'); ?>>
  										<label class="label_1">F</label>  
  										<input type="radio" name="sexo" value="Masculino" class="radio_button" id="sexo_masculino" <?php echo set_checkbox('sexo', 'Masculino'); ?>><label class="label_1">M</label>  
@@ -267,27 +267,23 @@
  								<li class="campo large-6 medium-6 small-12">
  									<div class="texto_campo large-5 medium-5 small-6" > Fecha de nacimiento</div>
  									<div class="input large-7 medium-7 small-5" >
- 										<input type="text" class="campo_input" style="height:30px;" name="fecha_nacimiento" value="<?php echo set_value('fecha_nacimiento'); ?>"/>
+ 										<input type="text" class="campo_input" style="height:30px;" name="fecha_nacimiento" value="<?php echo set_value('fecha_nacimiento'); ?>" id="datepicker"/>
  									</div>
  								</li>
 
  								<li class="campo large-6 medium-6 small-12 terminos">
- 									<label class="texto_check large-9 medium-9 small-10"><a href="politicas.html" target="_blank" tittle="terminos y condiciones">Acepto los términos y condiciones</a>
+ 									<label class="texto_check large-9 medium-9 small-10"><a href="home/terminos_y_condiciones" target="_blank" tittle="terminos y condiciones">Acepto los términos y condiciones</a>
  									</label>
- 									<input id="checkbox1" type="checkbox" class="large-1 medium-1 small-1" name="terminos" value="1" <?php echo set_checkbox('terminos', '1'); ?>>
- 								</li>
-
- 								<li class="campo large-6 medium-6 small-12 terminos_2">
- 									<label class="texto_check_2 large-9 medium-9 small-10">
- 										<a href="politicas.html" target="_blank" tittle="terminos y condiciones">Acepto los términos y condiciones</a>
- 									</label>
- 									<input id="checkbox2" type="checkbox" class="large-1 medium-1 small-1" >
+ 									<input type="checkbox" class="large-1 medium-1 small-1" name="terminos" value="1" <?php echo set_checkbox('terminos', '1'); ?> id="terminosId">
  								</li>
 
  								<li class="campo large-6 medium-6 small-12 politicas">
- 									<label class="texto_check_2 large-9 medium-9 small-10"><a href="politicas.html" target="_blank" title="políticas de privacidad">Acepto las políticas de privacidad</a>
+ 									<label class="texto_check_2 large-9 medium-9 small-10"><a href="home/politicas_de_privacidad" target="_blank" title="políticas de privacidad">Acepto las políticas de privacidad</a>
  									</label>
- 									<input id="checkbox1" type="checkbox" class="large-1 medium-1 small-1" name="politicas" value="1" <?php echo set_checkbox('politicas', '1'); ?>>
+ 									<input type="checkbox" class="large-1 medium-1 small-1" name="politicas" value="1" <?php echo set_checkbox('politicas', '1'); ?> id="politicasId">
+ 								</li>
+
+ 								<li id="errorId">
  								</li>
  							</ul>
 
@@ -313,7 +309,7 @@
 												<div class="small-3 blank_subir_factura">&nbsp
 												</div>
 												<?php echo form_upload('image', '', ' id="image"'); ?>
-												<a href="#" class="button large-10 medium-10 small-6" >Examinar</a>
+												<!-- <a href="#" class="button large-10 medium-10 small-6" >Examinar</a> -->
 											</div>
 										</div>
 									</li>
@@ -326,12 +322,12 @@
 										<div class="texto_campo_tienda large-12 medium-12 small-12" > Si compraste en la Tienda Durex, solo ingresa el número de la factura:
 										</div>
 										<div class="input_tienda large-7 medium-7 small-7" >
-											<input type="text" class="campo_input" style="height:30px;" name="numero_factura" value="<?php echo set_value('numero_factura'); ?>"/>
+											<input type="text" class="campo_input" style="height:30px;" name="numero_factura" value="<?php echo set_value('numero_factura'); ?>" id=""/>
 										</div>
 									</li>
 								</ul>
 
-								<input type="submit" value"Enviar">
+								<!-- <input type="submit" value"Enviar"> -->
 								<?php echo form_close(); ?>
 
 								<!-- FIN DEL FORMULARIO -->
@@ -351,9 +347,11 @@
 							</div>
 
 							<div class="large-3 medium-3 small-6 participa">
-								<a href="javascript:;" class="large-12 medium-12 small-12 btn_participa" id="#btn_2">
-									<div class="btn_enviar large-10 medium-12 small-12" id="btn_2"><img src="<?php echo assets_url('img/btn_enviar_formulario.png'); ?>" width="100%" alt="Enviar formulario">
-									</div>
+								<a href="#" id="submitButton">
+								<!-- <a href="#" class="large-12 medium-12 small-12 btn_participa"> -->
+									<!-- <div class="btn_enviar large-10 medium-12 small-12" id="btn_2"> -->
+										<img src="<?php echo assets_url('img/btn_enviar_formulario.png'); ?>" width="100%" alt="Enviar formularoooooio">
+									<!-- </div> -->
 								</a>
 
 							</div>
@@ -412,8 +410,12 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 		<script src="js/vendor/jquery.js"></script>
 		<script src="js/foundation.min.js"></script>
+		
 		<script>
 		$(document).foundation();
+		 $(function() {
+		    $("#datepicker").datepicker();
+		  });
 		</script>
 
 

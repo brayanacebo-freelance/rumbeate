@@ -1,4 +1,50 @@
 
+/*-------------**********************************INICIO TERMINOS*************************-------------------*/
+/*-------------**************************************************************************-------------------*/
+
+@media screen and (min-width: 480px) {
+.contenedor_terminos {
+    padding-left: 15%;
+    padding-right:15%;
+    font-family: 'Lato',sans-serif;
+    font-size: 1rem;
+    line-height: 1;
+    font-weight: 300;
+    color:#fff;
+    margin-top:10%;
+    }
+    .titulo_terminos {
+    font-weight: 500;
+    }
+    .boton_volver {
+        padding-left: 15%;
+        margin-top: 5%;
+        padding-bottom: 5%;
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 480px){
+    .contenedor_terminos {
+    padding-left: 4%;
+    padding-right:4%;
+    font-family: 'Lato',sans-serif;
+    font-size: 0.9rem;
+    line-height: 1;
+    font-weight: 300;
+    color:#fff;
+    margin-top:10%;
+    }
+    .titulo_terminos {
+    font-weight: 500;
+    }
+    .boton_volver {
+        padding-left: 4%;
+        margin-top: 5%;
+        padding-bottom: 5%;
+    }
+}
+
+
 
 /*-------------******************************MEDIA QUERY 1024PX**********************-------------------*/
 /*-------------**************************************************************************-------------------*/
@@ -34,14 +80,14 @@
         margin-top:0;
         margin-bottom: 1%;
         margin-left: 4%;
-        -webkit-animation-name: bounceIn;
-        animation-name: bounceIn;
+         -webkit-animation-name: bounceIn_1;
+        animation-name: bounceIn_1;
         -webkit-animation-duration: 1s;
         animation-duration: 1s;
     }
 
 
-     @-webkit-keyframes bounceIn {
+     @-webkit-keyframes bounceIn_1 {
   0%, 60%, 75%, 90%, 100% {
     -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
             transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
@@ -53,18 +99,18 @@
             transform: translate3d(0, -50%, 0);
   }
 
-  70% {
+  60% {
     opacity: 1;
-    -webkit-transform: translate3d(0, 5%, 0);
-            transform: translate3d(0, 5%, 0);
+    -webkit-transform: translate3d(0, 25%, 0);
+            transform: translate3d(0, 25%, 0);
   }
 
-  85% {
-    -webkit-transform: translate3d(0, -5%, 0);
-            transform: translate3d(0, -5%, 0);
+  75% {
+    -webkit-transform: translate3d(0, -10%, 0);
+            transform: translate3d(0, -10%, 0);
   }
 
-  92% {
+  90% {
     -webkit-transform: translate3d(0, 5%, 0);
             transform: translate3d(0, 5%, 0);
   }
@@ -75,7 +121,7 @@
   }
 }
 
-@keyframes bounceIn {
+@keyframes bounceIn_1 {
   0%, 60%, 75%, 90%, 100% {
     -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
             transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
@@ -87,18 +133,18 @@
             transform: translate3d(0, -50%, 0);
   }
 
-  70% {
+  60% {
     opacity: 1;
-    -webkit-transform: translate3d(0, 5%, 0);
-            transform: translate3d(0, 5%, 0);
+    -webkit-transform: translate3d(0, 25%, 0);
+            transform: translate3d(0, 25%, 0);
   }
 
-  85% {
-    -webkit-transform: translate3d(0, -5%, 0);
-            transform: translate3d(0, -5%, 0);
+  75% {
+    -webkit-transform: translate3d(0, -10%, 0);
+            transform: translate3d(0, -10%, 0);
   }
 
-  92% {
+  90% {
     -webkit-transform: translate3d(0, 5%, 0);
             transform: translate3d(0, 5%, 0);
   }
@@ -174,9 +220,42 @@
         display: block;
         margin-top:2%;
         margin-right: 2%;
-    }
-        
-     .texto_mecanica p {
+        -webkit-animation-name: left_1;
+        animation-name: left_1;
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+    }   
+
+     @-webkit-keyframes left_1 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-200%, 0, 0);
+            transform: translate3d(-200%, 0, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+@keyframes left_1 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-200%, 0, 0);
+            transform: translate3d(-200%, 0, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+   
+
+    .texto_mecanica p {
         font-family: 'Lato', sans-serif;
         font-size: 1.1rem;
         line-height: 1;
@@ -197,6 +276,71 @@
         line-height:1;
         margin-left: 0%;
     }
+
+    .mecanica_1, .mecanica_2, .mecanica_3 { 
+        z-index: 200;
+        -webkit-animation-name: zoomIn;
+        animation-name: zoomIn;
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        }
+
+    @-webkit-keyframes zoomIn {
+      0% {
+        opacity: 0;
+        -webkit-transform: scale3d(.6, .6, .6);
+                transform: scale3d(.6, .6, .6);
+      }
+
+      40% {
+        opacity: 1;
+      }
+    }
+
+    @keyframes zoomIn {
+      0% {
+        opacity: 0;
+        -webkit-transform: scale3d(.6, .6, .6);
+                transform: scale3d(.6, .6, .6);
+      }
+
+      40% {
+        opacity: 1;
+      }
+    }
+
+    .mecanica_1:hover, .mecanica_2:hover, .mecanica_3:hover {
+        -webkit-animation-name: opacidad;
+        animation-name: opacidad;
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        }
+        
+         @-webkit-keyframes opacidad {
+      0% {
+        opacity: 1;
+      }
+
+      40% {
+        opacity: 0.5;
+      }
+      100% {
+        opacity:  0.5;
+      }
+    }   
+    @keyframes opacidad {
+      0% {
+        opacity: 1;
+      }
+
+      40% {
+        opacity:  0.5;
+      }
+      100% {
+        opacity: 0.5;
+      }
+    }   
+    
 
     .mecanica_1 {
         background: url("../img/graphic_mecanica.png") no-repeat;
@@ -282,23 +426,25 @@
     .participa {
        margin-top:2%;
     }
-    .participa, .btn_participa, .flecha_participa, .coco_loco, .plugin_redes, .ya_participaste {
+    .participa, .participa_2, .btn_participa, .flecha_participa, .coco_loco, .plugin_redes, .ya_participaste {
         position: relative;
         display: block;
         float: left;
         position: relative;
     }
 
-    .coco_loco {
-        z-index: 20;
-        margin-bottom: 10%;
-    }
     .flecha_participa {
-        margin-left: -16%;
+    margin-left: -16%;
     z-index: 10;
     margin-top: 9%;
     }
     
+    .flecha_participa {
+    margin-left: -16%;
+    z-index: 10;
+    margin-top: 9%;
+    }
+
     .plugin_redes {
         margin-left:2%;
     }
@@ -316,6 +462,133 @@
         margin-top: 40%
     }
 
+    /*---animacion btn coco loco---*/
+    .coco_loco {
+        z-index: 20;
+        margin-bottom: 10%;
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+        -webkit-animation-name: rotateIn_1;
+        animation-name: rotateIn_1;
+    }
+
+    @-webkit-keyframes rotateIn_1 {
+      0% {
+        -webkit-transform-origin: center;
+                transform-origin: center;
+        -webkit-transform: none;
+                transform: none;
+         }
+
+      6% {
+        -webkit-transform-origin: center;
+                transform-origin: center;
+        -webkit-transform: rotate3d(0, 0, 1, 45deg);
+                transform: rotate3d(0, 0, 1, 45deg);
+       }
+
+       12% {
+        -webkit-transform-origin: center;
+                transform-origin: center;
+        -webkit-transform: none;
+                transform: none;
+       }
+
+       18% {
+        -webkit-transform-origin: center;
+                transform-origin: center;
+        -webkit-transform: rotate3d(0, 0, 1, 45deg);
+                transform: rotate3d(0, 0, 1, 45deg);
+       }
+
+       24% {
+        -webkit-transform-origin: center;
+                transform-origin: center;
+       -webkit-transform: none;
+                transform: none;
+       }
+
+       30% {
+        -webkit-transform-origin: center;
+                transform-origin: center;
+        -webkit-transform: rotate3d(0, 0, 1, 45deg);
+                transform: rotate3d(0, 0, 1, 45deg);
+       }
+
+       36% {
+        -webkit-transform-origin: center;
+                transform-origin: center;
+         -webkit-transform: none;
+                transform: none;
+       }
+
+       100% {
+        -webkit-transform-origin: center;
+                transform-origin: center;
+         -webkit-transform: none;
+                transform: none;
+       }
+    }
+
+    @keyframes rotateIn_1 {
+     0% {
+        -webkit-transform-origin: center;
+                transform-origin: center;
+        -webkit-transform: none;
+                transform: none;
+         }
+
+      8% {
+        -webkit-transform-origin: center;
+                transform-origin: center;
+        -webkit-transform: rotate3d(0, 0, 1, 45deg);
+                transform: rotate3d(0, 0, 1, 45deg);
+       }
+
+       16% {
+        -webkit-transform-origin: center;
+                transform-origin: center;
+        -webkit-transform: none;
+                transform: none;
+       }
+
+       24% {
+        -webkit-transform-origin: center;
+                transform-origin: center;
+        -webkit-transform: rotate3d(0, 0, 1, 45deg);
+                transform: rotate3d(0, 0, 1, 45deg);
+       }
+
+       32% {
+        -webkit-transform-origin: center;
+                transform-origin: center;
+       -webkit-transform: none;
+                transform: none;
+       }
+
+       40% {
+        -webkit-transform-origin: center;
+                transform-origin: center;
+        -webkit-transform: rotate3d(0, 0, 1, 45deg);
+                transform: rotate3d(0, 0, 1, 45deg);
+       }
+
+       48% {
+        -webkit-transform-origin: center;
+                transform-origin: center;
+         -webkit-transform: none;
+                transform: none;
+       }
+
+       100% {
+        -webkit-transform-origin: center;
+                transform-origin: center;
+         -webkit-transform: none;
+                transform: none;
+       }
+     }
 
     /*------------- Segundo contendor cambiable (FORMULARIO)-------------------*/
     .formulario_contendedor {
@@ -346,6 +619,42 @@
         line-height:1;
         margin-left: 0%;
     }
+
+    .info_factura, .info_factura_2, .info_factura_3, .participa_2 {
+        -webkit-animation-name: left_1;
+        animation-name: left_1;
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+    }   
+
+     @-webkit-keyframes left_1 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-200%, 0, 0);
+            transform: translate3d(-200%, 0, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+@keyframes left_1 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-200%, 0, 0);
+            transform: translate3d(-200%, 0, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
 
     .info_factura {
         background: url("../img/graphic_ayuda_form.png") no-repeat;
@@ -537,6 +846,70 @@
     .label_1 {
         color:#FF12EE;
     }
+
+    .participa_2 {
+        -webkit-animation-name: flash;
+        animation-name: flash;
+        -webkit-animation-duration: 3s;
+        animation-duration: 3s;
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+
+    }
+
+    @-webkit-keyframes flash {
+  0% {
+    opacity: 1;
+  }
+
+  5%{
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 1;
+  }
+
+  15%{
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes flash {
+  0% {
+    opacity: 1;
+  }
+
+  5%{
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 1;
+  }
+
+  15%{
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+
+    }
+
         /*------------- Tercer contendor cambiable (GRACIAS)-------------------*/
     
     
@@ -559,7 +932,67 @@
         background: url("../img/texto_gracias.png") no-repeat;
         background-size: 100%;
         width: 100%;
+        -webkit-animation-name: flash;
+        animation-name: flash;
+        -webkit-animation-duration: 3s;
+        animation-duration: 3s;
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+
     }
+
+    @-webkit-keyframes flash {
+  0% {
+    opacity: 1;
+  }
+
+  5%{
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 1;
+  }
+
+  15%{
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes flash {
+  0% {
+    opacity: 1;
+  }
+
+  5%{
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 1;
+  }
+
+  15%{
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
     .twitter {
         float: left;
         position:relative;
@@ -616,14 +1049,14 @@
         float: left;
         background-position: center;
         margin-bottom:3%;
-        -webkit-animation-name: bounceIn;
-        animation-name: bounceIn;
+         -webkit-animation-name: bounceIn_2;
+        animation-name: bounceIn_2;
         -webkit-animation-duration: 0.75s;
         animation-duration: 0.75s;
     }
 
 
-     @-webkit-keyframes bounceIn {
+     @-webkit-keyframes bounceIn_2 {
   0%, 60%, 75%, 90%, 100% {
     -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
             transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
@@ -657,7 +1090,7 @@
   }
 }
 
-@keyframes bounceIn {
+@keyframes bounceIn_2 {
   0%, 60%, 75%, 90%, 100% {
     -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
             transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
@@ -696,6 +1129,7 @@
         width:454px;
         float: left;
     }
+    
     .blank_logo, .contendedor_logo, .cancun_header_2, .cancun_texto_header_2, .contenedor_logo_2 {
         float:left;
         display:block;
@@ -745,8 +1179,39 @@
         margin-top:2%;
         background-size: 80%;
         background-position-x: 38%;
-        
-    }
+        -webkit-animation-name: left_1;
+        animation-name: left_1;
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+    }   
+
+     @-webkit-keyframes left_1 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-200%, 0, 0);
+            transform: translate3d(-200%, 0, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+@keyframes left_1 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-200%, 0, 0);
+            transform: translate3d(-200%, 0, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
         
      .texto_mecanica p {
         font-family: 'Lato', sans-serif;
@@ -769,6 +1234,70 @@
         line-height:1;
         margin-left: 0%;
     }
+
+    .mecanica_1, .mecanica_2, .mecanica_3 { 
+        z-index: 200;
+        -webkit-animation-name: zoomIn;
+        animation-name: zoomIn;
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        }
+
+    @-webkit-keyframes zoomIn {
+      0% {
+        opacity: 0;
+        -webkit-transform: scale3d(.6, .6, .6);
+                transform: scale3d(.6, .6, .6);
+      }
+
+      40% {
+        opacity: 1;
+      }
+    }
+
+    @keyframes zoomIn {
+      0% {
+        opacity: 0;
+        -webkit-transform: scale3d(.6, .6, .6);
+                transform: scale3d(.6, .6, .6);
+      }
+
+      40% {
+        opacity: 1;
+      }
+    }
+
+    .mecanica_1:hover, .mecanica_2:hover, .mecanica_3:hover {
+        -webkit-animation-name: opacidad;
+        animation-name: opacidad;
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        }
+        
+         @-webkit-keyframes opacidad {
+      0% {
+        opacity: 1;
+      }
+
+      40% {
+        opacity: 0.5;
+      }
+      100% {
+        opacity:  0.5;
+      }
+    }   
+    @keyframes opacidad {
+      0% {
+        opacity: 1;
+      }
+
+      40% {
+        opacity:  0.5;
+      }
+      100% {
+        opacity: 0.5;
+      }
+    }   
 
     .mecanica_1 {
         background: url("../img/graphic_mecanica.png") no-repeat;
@@ -854,19 +1383,76 @@
         text-decoration: none;
     }
 
-    .participa {
-       margin-top:2%;
+    .participa_2 {
+        margin-top:2%;
+        -webkit-animation-name: flash;
+        animation-name: flash;
+        -webkit-animation-duration: 3s;
+        animation-duration: 3s;
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+
     }
+
+    @-webkit-keyframes flash {
+  0% {
+    opacity: 1;
+  }
+
+  5%{
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 1;
+  }
+
+  15%{
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes flash {
+  0% {
+    opacity: 1;
+  }
+
+  5%{
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 1;
+  }
+
+  15%{
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+
+    }
+
+
     .participa, .btn_participa, .flecha_participa, .coco_loco, .plugin_redes, .ya_participaste {
         position: relative;
         display: block;
         float: left;
         position: relative;
-    }
-
-    .coco_loco {
-        z-index: 20;
-        margin-bottom: 5%;
     }
 
     .btn_enviar {
@@ -900,6 +1486,132 @@
         display:none;
     }
 
+    .coco_loco {
+        z-index: 20;
+        margin-bottom: 5%;
+       -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+        -webkit-animation-name: rotateIn_1;
+        animation-name: rotateIn_1;
+    }
+
+    @-webkit-keyframes rotateIn_1 {
+      0% {
+        -webkit-transform-origin: center;
+                transform-origin: center;
+        -webkit-transform: none;
+                transform: none;
+         }
+
+      8% {
+        -webkit-transform-origin: center;
+                transform-origin: center;
+        -webkit-transform: rotate3d(0, 0, 1, 45deg);
+                transform: rotate3d(0, 0, 1, 45deg);
+       }
+
+       16% {
+        -webkit-transform-origin: center;
+                transform-origin: center;
+        -webkit-transform: none;
+                transform: none;
+       }
+
+       24% {
+        -webkit-transform-origin: center;
+                transform-origin: center;
+        -webkit-transform: rotate3d(0, 0, 1, 45deg);
+                transform: rotate3d(0, 0, 1, 45deg);
+       }
+
+       32% {
+        -webkit-transform-origin: center;
+                transform-origin: center;
+       -webkit-transform: none;
+                transform: none;
+       }
+
+       40% {
+        -webkit-transform-origin: center;
+                transform-origin: center;
+        -webkit-transform: rotate3d(0, 0, 1, 45deg);
+                transform: rotate3d(0, 0, 1, 45deg);
+       }
+
+       48% {
+        -webkit-transform-origin: center;
+                transform-origin: center;
+         -webkit-transform: none;
+                transform: none;
+       }
+
+       100% {
+        -webkit-transform-origin: center;
+                transform-origin: center;
+         -webkit-transform: none;
+                transform: none;
+       }
+    }
+
+    @keyframes rotateIn_1 {
+     0% {
+        -webkit-transform-origin: center;
+                transform-origin: center;
+        -webkit-transform: none;
+                transform: none;
+         }
+
+      8% {
+        -webkit-transform-origin: center;
+                transform-origin: center;
+        -webkit-transform: rotate3d(0, 0, 1, 45deg);
+                transform: rotate3d(0, 0, 1, 45deg);
+       }
+
+       16% {
+        -webkit-transform-origin: center;
+                transform-origin: center;
+        -webkit-transform: none;
+                transform: none;
+       }
+
+       24% {
+        -webkit-transform-origin: center;
+                transform-origin: center;
+        -webkit-transform: rotate3d(0, 0, 1, 45deg);
+                transform: rotate3d(0, 0, 1, 45deg);
+       }
+
+       32% {
+        -webkit-transform-origin: center;
+                transform-origin: center;
+       -webkit-transform: none;
+                transform: none;
+       }
+
+       40% {
+        -webkit-transform-origin: center;
+                transform-origin: center;
+        -webkit-transform: rotate3d(0, 0, 1, 45deg);
+                transform: rotate3d(0, 0, 1, 45deg);
+       }
+
+       48% {
+        -webkit-transform-origin: center;
+                transform-origin: center;
+         -webkit-transform: none;
+                transform: none;
+       }
+
+       100% {
+        -webkit-transform-origin: center;
+                transform-origin: center;
+         -webkit-transform: none;
+                transform: none;
+       }
+     }
     /*------------- Segundo contendor cambiable (FORMULARIO)-------------------*/
     .formulario_contendedor {
         display:none;
@@ -928,8 +1640,41 @@
         text-align: center;
         line-height:1;
         margin-left: 0%;
+        -webkit-animation-name: left_1;
+        animation-name: left_1;
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        }   
+
+        @-webkit-keyframes left_1 {
+        0% {
+        opacity: 0;
+        -webkit-transform: translate3d(-200%, 0, 0);
+        transform: translate3d(-200%, 0, 0);
+        }
+
+      100% {
+        opacity: 1;
+        -webkit-transform: none;
+                transform: none;
+         }
+        }
+
+    @keyframes left_1 {
+      0% {
+        opacity: 0;
+        -webkit-transform: translate3d(-200%, 0, 0);
+                transform: translate3d(-200%, 0, 0);
+         }
+
+      100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+         }
     }
 
+ 
     .info_factura {
         background: url("../img/graphic_ayuda_form.png") no-repeat;
         background-size: 100%;
@@ -956,7 +1701,8 @@
         color:#FFFFFF;
         margin-top: 37%;
         margin-right: 5%;
-        font-weight: 300;          
+        font-weight: 300;   
+
     }
 
     .header_fomulario {
@@ -967,7 +1713,7 @@
         background-color: rgba(0, 0, 0, 0.7);
     }
     
-    .header_fomulario, .blank_mecanica_2, .texto_explicativo, .texto_campo_examinar, .formulario, .columna_1, .columna_2, .columna_3, .texto_campo, .texto_campo_sexo, .campo, .input {
+    .header_fomulario, .participa_2, .blank_mecanica_2, .texto_explicativo, .texto_campo_examinar, .formulario, .columna_1, .columna_2, .columna_3, .texto_campo, .texto_campo_sexo, .campo, .input {
         display: block;
         float:left;
         position: relative;
@@ -1162,7 +1908,66 @@
         background-size: 100%;
         width: 100%;
         margin-top: 2%;
+        -webkit-animation-name: flash;
+        animation-name: flash;
+        -webkit-animation-duration: 3s;
+        animation-duration: 3s;
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+
     }
+
+    @-webkit-keyframes flash {
+  0% {
+    opacity: 1;
+  }
+
+  5%{
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 1;
+  }
+
+  15%{
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes flash {
+  0% {
+    opacity: 1;
+  }
+
+  5%{
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 1;
+  }
+
+  15%{
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
     .twitter {
         float: left;
         position:relative;
@@ -1213,7 +2018,7 @@
     .logo_cancun {
         float: left;
         margin-top: 3%;
-        -webkit-animation-name: bounceIn;
+         -webkit-animation-name: bounceIn;
         animation-name: bounceIn;
         -webkit-animation-duration: 0.75s;
         animation-duration: 0.75s;
@@ -1309,6 +2114,7 @@
         margin-top:-2%;
     }
 
+
     .cancun_texto_header_2 {
         display:none;
     }
@@ -1358,8 +2164,41 @@
         display: block;
         margin-top:2%;
         margin-right: 2%;
-    }
-        
+        -webkit-animation-name: left_1;
+        animation-name: left_1;
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+    }   
+
+     @-webkit-keyframes left_1 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-200%, 0, 0);
+            transform: translate3d(-200%, 0, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+@keyframes left_1 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-200%, 0, 0);
+            transform: translate3d(-200%, 0, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+   
+
      .texto_mecanica p {
         font-family: 'Lato', sans-serif;
         font-size: 1rem;
@@ -1381,6 +2220,70 @@
         line-height:1;
         margin-left: 0%;
     }
+
+    .mecanica_1, .mecanica_2, .mecanica_3 { 
+        z-index: 200;
+        -webkit-animation-name: zoomIn;
+        animation-name: zoomIn;
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        }
+
+    @-webkit-keyframes zoomIn {
+      0% {
+        opacity: 0;
+        -webkit-transform: scale3d(.6, .6, .6);
+                transform: scale3d(.6, .6, .6);
+      }
+
+      40% {
+        opacity: 1;
+      }
+    }
+
+    @keyframes zoomIn {
+      0% {
+        opacity: 0;
+        -webkit-transform: scale3d(.6, .6, .6);
+                transform: scale3d(.6, .6, .6);
+      }
+
+      40% {
+        opacity: 1;
+      }
+    }
+
+    .mecanica_1:hover, .mecanica_2:hover, .mecanica_3:hover {
+        -webkit-animation-name: opacidad;
+        animation-name: opacidad;
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        }
+        
+         @-webkit-keyframes opacidad {
+      0% {
+        opacity: 1;
+      }
+
+      40% {
+        opacity: 0.5;
+      }
+      100% {
+        opacity:  0.5;
+      }
+    }   
+    @keyframes opacidad {
+      0% {
+        opacity: 1;
+      }
+
+      40% {
+        opacity:  0.5;
+      }
+      100% {
+        opacity: 0.5;
+      }
+    }   
 
     .mecanica_1 {
         background: url("../img/graphic_mecanica.png") no-repeat;
@@ -1472,9 +2375,6 @@
         position: relative;
     }
 
-    .coco_loco {
-        z-index: 20;
-    }
     .flecha_participa {
         margin-left: -16%;
     z-index: 10;
@@ -1502,6 +2402,132 @@
         float: right;
         margin-top: 40%
     }
+
+     .coco_loco {
+        z-index: 20;
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+        -webkit-animation-name: rotateIn_1;
+        animation-name: rotateIn_1;
+    }
+
+    @-webkit-keyframes rotateIn_1 {
+      0% {
+        -webkit-transform-origin: center;
+                transform-origin: center;
+        -webkit-transform: none;
+                transform: none;
+         }
+
+      8% {
+        -webkit-transform-origin: center;
+                transform-origin: center;
+        -webkit-transform: rotate3d(0, 0, 1, 45deg);
+                transform: rotate3d(0, 0, 1, 45deg);
+       }
+
+       16% {
+        -webkit-transform-origin: center;
+                transform-origin: center;
+        -webkit-transform: none;
+                transform: none;
+       }
+
+       24% {
+        -webkit-transform-origin: center;
+                transform-origin: center;
+        -webkit-transform: rotate3d(0, 0, 1, 45deg);
+                transform: rotate3d(0, 0, 1, 45deg);
+       }
+
+       32% {
+        -webkit-transform-origin: center;
+                transform-origin: center;
+       -webkit-transform: none;
+                transform: none;
+       }
+
+       40% {
+        -webkit-transform-origin: center;
+                transform-origin: center;
+        -webkit-transform: rotate3d(0, 0, 1, 45deg);
+                transform: rotate3d(0, 0, 1, 45deg);
+       }
+
+       48% {
+        -webkit-transform-origin: center;
+                transform-origin: center;
+         -webkit-transform: none;
+                transform: none;
+       }
+
+       100% {
+        -webkit-transform-origin: center;
+                transform-origin: center;
+         -webkit-transform: none;
+                transform: none;
+       }
+    }
+
+    @keyframes rotateIn_1 {
+     0% {
+        -webkit-transform-origin: center;
+                transform-origin: center;
+        -webkit-transform: none;
+                transform: none;
+         }
+
+      8% {
+        -webkit-transform-origin: center;
+                transform-origin: center;
+        -webkit-transform: rotate3d(0, 0, 1, 45deg);
+                transform: rotate3d(0, 0, 1, 45deg);
+       }
+
+       16% {
+        -webkit-transform-origin: center;
+                transform-origin: center;
+        -webkit-transform: none;
+                transform: none;
+       }
+
+       24% {
+        -webkit-transform-origin: center;
+                transform-origin: center;
+        -webkit-transform: rotate3d(0, 0, 1, 45deg);
+                transform: rotate3d(0, 0, 1, 45deg);
+       }
+
+       32% {
+        -webkit-transform-origin: center;
+                transform-origin: center;
+       -webkit-transform: none;
+                transform: none;
+       }
+
+       40% {
+        -webkit-transform-origin: center;
+                transform-origin: center;
+        -webkit-transform: rotate3d(0, 0, 1, 45deg);
+                transform: rotate3d(0, 0, 1, 45deg);
+       }
+
+       48% {
+        -webkit-transform-origin: center;
+                transform-origin: center;
+         -webkit-transform: none;
+                transform: none;
+       }
+
+       100% {
+        -webkit-transform-origin: center;
+                transform-origin: center;
+         -webkit-transform: none;
+                transform: none;
+       }
+     }
 
 
     /*------------- Segundo contendor cambiable (FORMULARIO)-------------------*/
@@ -1605,7 +2631,7 @@
         background-color: rgba(0, 0, 0, 0.7);
     }
     
-    .header_fomulario, .texto_explicativo, .formulario, .columna_1, .columna_2, .columna_3, .campo, .input, .blank_campo_formulario, .blank_subir_factura {
+    .header_fomulario, .participa_2, .texto_explicativo, .formulario, .columna_1, .columna_2, .columna_3, .campo, .input, .blank_campo_formulario, .blank_subir_factura {
         display: block;
         float:left;
         position: relative;
@@ -1694,6 +2720,7 @@
     }
 
     .texto_registrado {
+        color: #fff;
         font-family: 'Lato', sans-serif;
         font-size: 1rem;
         line-height: 1;
@@ -1746,7 +2773,66 @@
         background: url("../img/texto_gracias.png") no-repeat;
         background-size: 100%;
         width: 100%;
+        -webkit-animation-name: flash;
+        animation-name: flash;
+        -webkit-animation-duration: 3s;
+        animation-duration: 3s;
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+
     }
+
+    @-webkit-keyframes flash {
+  0% {
+    opacity: 1;
+  }
+
+  5%{
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 1;
+  }
+
+  15%{
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes flash {
+  0% {
+    opacity: 1;
+  }
+
+  5%{
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 1;
+  }
+
+  15%{
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
     .twitter {
         float: left;
         position:relative;
@@ -1850,19 +2936,6 @@
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
     .logo_cancun, .logo_cancun_texto {
         display:none;
     }
@@ -1934,5 +3007,8 @@
     .twitter {
         margin-left: 2%;
     }
+
+
+
 
 

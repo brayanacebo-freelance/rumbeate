@@ -22,12 +22,24 @@ class Home extends Public_Controller {
 	
     // -----------------------------------------------------------------
 
-
-
 	public function index()
 	{
 		$this->template->build('index');
 	}
+
+    // -----------------------------------------------------------------
+
+    public function terminos_y_condiciones()
+    {
+        $this->template->build('terminos');
+    }
+
+    // -----------------------------------------------------------------
+
+    public function politicas_de_privacidad()
+    {
+        $this->template->build('politicas');
+    }
 
 
     /*
