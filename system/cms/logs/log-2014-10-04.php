@@ -832,3 +832,9 @@ ERROR - 2014-10-04 22:50:46 --> Severity: Notice  --> Undefined variable: status
 ERROR - 2014-10-04 22:50:47 --> Page Missing: js/jquery.si.js
 ERROR - 2014-10-04 22:50:47 --> Page Missing: js/foundation.min.js
 ERROR - 2014-10-04 22:50:47 --> Page Missing: js/vendor/jquery.js
+ERROR - 2014-10-04 23:48:26 --> Severity: Notice  --> Undefined variable: statusJson /Applications/XAMPP/xamppfiles/htdocs/freelos/rumbeate/addons/shared_addons/themes/rumbeate/views/modules/home/index.php 204
+ERROR - 2014-10-04 23:48:26 --> Severity: Notice  --> Undefined variable: statusJson /Applications/XAMPP/xamppfiles/htdocs/freelos/rumbeate/addons/shared_addons/themes/rumbeate/views/modules/home/index.php 445
+ERROR - 2014-10-04 23:48:26 --> Severity: Notice  --> Undefined variable: statusJson /Applications/XAMPP/xamppfiles/htdocs/freelos/rumbeate/addons/shared_addons/themes/rumbeate/views/modules/home/index.php 454
+ERROR - 2014-10-04 23:48:28 --> Page Missing: js/foundation.min.js
+ERROR - 2014-10-04 23:48:28 --> Page Missing: js/vendor/jquery.js
+ERROR - 2014-10-04 23:48:28 --> Page Missing: js/jquery.si.js
