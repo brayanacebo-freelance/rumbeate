@@ -29,17 +29,17 @@ class Home extends Public_Controller {
 
     // -----------------------------------------------------------------
 
-    public function terminos_y_condiciones()
-    {
-        $this->template->build('terminos');
-    }
+  public function terminos_y_condiciones()
+  {
+    $this->template->build('terminos');
+  }
 
     // -----------------------------------------------------------------
 
-    public function politicas_de_privacidad()
-    {
-        $this->template->build('politicas');
-    }
+  public function politicas_de_privacidad()
+  {
+    $this->template->build('politicas');
+  }
 
 
     /*
@@ -60,26 +60,26 @@ class Home extends Public_Controller {
     	$this->form_validation->set_rules('numero_factura', 'Numero de factura');
       $this->form_validation->set_rules('terminos', 'Términos y condiciones', 'required|trim');
       $this->form_validation->set_rules('politicas', 'Políticas de privacidad', 'required|trim');
-    	
-    	$statusJson = 'error';
-    	$msgJson = 'Por favor intenta de mas tarde';
-    	
-    	if ($this->form_validation->run() === TRUE)
-    	{
 
-    		$post = (object) $this->input->post(null);
+      $statusJson = 'error';
+      $msgJson = 'Por favor intenta de mas tarde';
 
-    		$data = array(
-    			'cedula' => $post->cedula,
-    			'sexo' => $post->sexo,
-    			'nombre' => $post->nombre,
-    			'apellidos' => $post->apellidos,
-    			'email' => $post->email,
-    			'ciudad' => $post->ciudad,
-    			'celular' => $post->celular,
-    			'fecha_nacimiento' => $post->fecha_nacimiento,
-    			'numero_factura' => $post->numero_factura
-    			);
+      if ($this->form_validation->run() === TRUE)
+      {
+
+        $post = (object) $this->input->post(null);
+
+        $data = array(
+         'cedula' => $post->cedula,
+         'sexo' => $post->sexo,
+         'nombre' => $post->nombre,
+         'apellidos' => $post->apellidos,
+         'email' => $post->email,
+         'ciudad' => $post->ciudad,
+         'celular' => $post->celular,
+         'fecha_nacimiento' => $post->fecha_nacimiento,
+         'numero_factura' => $post->numero_factura
+         );
 
         $config['upload_path'] = './' . UPLOAD_PATH . '';
         $config['allowed_types'] = 'gif|jpg|png|jpeg';
@@ -124,9 +124,33 @@ class Home extends Public_Controller {
      }
 
      $this->template->set('statusJson', $statusJson)
-                    ->set('msgJson', $msgJson)
-                    ->build('index');
+     ->set('msgJson', $msgJson)
+     ->build('index');
 
    }
 
- }
+   // -----------------------------------------------------------------
+
+   public function getData()
+   {
+    $cedula = $this->input->post('cedula');
+    $result =  $this->db->where('cedula', $cedula )->get('default_registro')->row();
+    if($result ){
+      $user = array(
+        'sexo' => $result->sexo,
+        'nombre' => $result->nombre,
+        'apellidos' => $result->apellidos,
+        'email' => $result->email,
+        'ciudad' => $result->ciudad,
+        'celular' => $result->celular,
+        'fecha_nacimiento' => $result->fecha_nacimiento,
+        'numero_factura' => $result->numero_factura
+        );
+      echo json_encode($user);
+    }else{
+      echo 'no';
+    }
+
+  }
+
+}
